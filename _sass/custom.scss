@@ -1,0 +1,91 @@
+/* start custom scss snippet */		
+
+.column-left {
+  vertical-align: top;
+  width: 55%;
+}
+
+.column-right {
+  vertical-align: top;
+}
+
+.announce {
+  margin-left: 20px;
+}
+
+.announce ul {
+  line-height: 1.5em;
+}
+
+.column-right .announce ul {
+  line-height: 1.5em;
+}
+
+.portfolio {
+  line-height: 1.3em; 
+  font-size: medium;
+  thead {
+    vertical-align: middle; 
+    text-align: left; 
+    font-weight: bold; 
+    font-size: larger;
+  }
+  tbody {
+    vertical-align: top;
+  }
+  .market {
+    font-weight: bold;
+  }
+  .offense {
+    color: $red;
+  }
+  .growth {
+    color: $blue;
+  }
+  .defense {
+    color: $green;
+  }
+  tfoot {
+    color: $yellow;
+    ul {
+      margin: 0 0 0 1em;
+    }
+  }
+}
+
+.reference {
+  a {
+    font-weight: normal;
+  }
+}
+
+.targetPrices {
+  .price {
+    border-right-width: thick;
+  }
+  .target {
+    font-weight: bold;
+  }
+  .increase {
+    color: $green;
+  }
+  .decrease {
+    color: $red;
+  }
+  .volatile {
+    color: $red;
+    font-weight: bold;
+    background-color: $main-color-3;
+  }
+}
+
+.gridPrices {
+  .increase {
+    color: $green;
+  }
+  .decrease {
+    color: $red;
+  }
+}
+
+/* end custom scss snippet */

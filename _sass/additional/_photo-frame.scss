@@ -1,0 +1,32 @@
+.article__content {
+  img.shadow, .shadow > img {
+    @include box-shadow();
+  }
+
+  img.border, .border > img {
+    border: 1px solid $border-color-l;
+  }
+
+  img.rounded, .rounded > img {
+    border-radius: map-get($base, border-radius);
+  }
+
+  img.circle, .circle > img {
+    border-radius: 50%;
+  }
+
+  img.small, .small > img {
+    width: 33.333333%;
+    margin-left: 33.333333%;
+  }
+
+  img.medium, .medium > img {
+    width: 66.666667%;
+    margin-left: 16.666666%;
+  }
+
+  img.large, .large > img {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
