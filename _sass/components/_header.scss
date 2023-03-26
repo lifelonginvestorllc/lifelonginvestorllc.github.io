@@ -68,9 +68,6 @@
   	  margin-left: map-get($spacers, 2);  	  
   	  margin-right: map-get($spacers, 2);  	  
     }
-    @include media-breakpoint-down(md) {
-      @include flexbox();
-    }   
   }
 }
 
@@ -100,15 +97,13 @@
 }
 
 .header__avatar {
+  display: none;
   .author-profile__avatar {
   	width: map-get($layout, header-height-sm);
   	height: map-get($layout, header-height-sm);
   	margin-top: map-get($layout, header-height-top);
   	margin-left: map-get($base, spacer); 	
   }
-  @include media-breakpoint-down(md) {
-    display: none;
-  }   
 }
 
 .navigation {
