@@ -131,6 +131,7 @@
 }
 
 .navigation__item {
+  display: none;
   &::after {
     display: block;
     margin-bottom: -4px;
