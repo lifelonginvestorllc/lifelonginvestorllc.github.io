@@ -28,11 +28,18 @@
       <div>
         {%- include snippets/get-locale-string.html key='COPYRIGHT_DATES' -%}
         {%- assign _locale_copyright_dates = __return -%}
+        © {{ site.title }} {{ _locale_copyright_dates }}
+      </div>
+      <!--
+      <div>
+        {%- include snippets/get-locale-string.html key='COPYRIGHT_DATES' -%}
+        {%- assign _locale_copyright_dates = __return -%}
         © {{ site.title }} {{ _locale_copyright_dates }}, Powered by
         <a target="_blank" title="GitHub is a provider of Internet hosting for software development and version control using Git." href="https://github.com/">Github</a> & 
         <a target="_blank" title="Jekyll is a simple, blog-aware, static site generator." href="http://jekyllrb.com/">Jekyll</a> & 
         <a target="_blank" title="TeXt is a super customizable Jekyll theme." href="https://github.com/kitian616/jekyll-TeXt-theme">TeXt Theme</a>.
       </div>
+      -->
     </div>
   </div>
 </footer>
