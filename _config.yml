@@ -20,9 +20,9 @@ text_skin: dark # "default" (default), "dark", "forest", "ocean", "chocolate", "
 highlight_theme: tomorrow-night # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : "https://lifelonginvestor.net" # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : '/' # does not include hostname
-title   : LifelongInvestor
+title   : Lifelong Investor LLC
 description: > # this means to ignore newlines until "Language & timezone"
-  LifelongInvestor | 终身投资者
+  Lifelong Investor LLC | 终身投资者有限责任公司
 
 ## => Language and Timezone
 ##############################
@@ -34,7 +34,7 @@ timezone: America/New_York # see https://en.wikipedia.org/wiki/List_of_tz_databa
 ##############################
 author:
   type      : organization # "person" (default), "organization"
-  name      : Lifelong Investor
+  name      : Lifelong Investor LLC
   url       : /about.html
   avatar    : /assets/investor-avatar.png
   bio       : Meet a group of like-minded friends who are willing to walk hand in hand on the road of lifelong investment. 邂逅一群志同道合的朋友，愿意在终身投资之路上携手同行。
@@ -238,65 +238,6 @@ defaults:
       type: articles2
     values:
       show_date: false
-  - scope:
-      path: "_coding"
-    values:
-      layout: article
-      cover: /assets/images/programmer/programmer.png
-      categories: [Coding]
-      sidebar:
-        nav: coding
-      sharing: true
-      aside:
-        toc: true
-      show_date: false
-      pageview: true
-  - scope:
-      path: "_algorithm"
-    values:
-      layout: article
-      cover: /assets/images/coding/computer-science.png
-      categories: [Algorithm]
-      sharing: true
-      aside:
-        toc: true
-      show_date: false
-      pageview: true      
-  - scope:
-      path: "_architect"
-    values:
-      layout: article
-      cover: /assets/images/architect/bigdata-logo-1.png
-      categories: [Architect]
-      sharing: true
-      aside:
-        toc: true
-      show_date: false
-      pageview: true
-  - scope:
-      path: "_programmer"
-    values:
-      layout: article
-      cover: /assets/images/programmer/programmer.png      
-      categories: [Programmer]
-      sharing: true
-      aside:
-        toc: false
-      show_date: false
-      pageview: true      
-  - scope:
-      path: "_blogger"
-    values:
-      layout: article
-      cover: /assets/images/blogger/blogger.png
-      categories: [Blogger]
-      sidebar:
-        nav: blogger
-      sharing: true
-      aside:
-        toc: true
-      show_date: false
-      pageview: true
   - scope:
       path: "_investor"
     values:
