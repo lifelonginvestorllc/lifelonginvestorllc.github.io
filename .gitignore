@@ -56,3 +56,5 @@ build-iPhoneSimulator/
 # .rubocop-https?--*
 /_site/
 /.jekyll-cache/
+node_modules/
+.DS_Store

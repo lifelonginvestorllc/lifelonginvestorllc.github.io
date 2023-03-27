@@ -115,9 +115,13 @@ As a lifelong investor, you need to reconcile and synthesize above two main scho
 
 ### Introduce LIATS 介绍交易系统
 
-LIATS (Lifelong Investor Algorithmic Trading System) is Agile and Transparent, by connecting to your own [IB (InteractiveBrokers)](https://www.interactivebrokers.com){:target="_blank"} account, our Algo Bot will conduct the trading under your monitor and also notify you through SMS, Telegram or Email as per your preference.
+LIATS(Lifelong Investor Algorithmic Trading System) is agile and transparent, applies the most suitable **trading strategy** to well-picked security target (Stock/ETF/Future/Forex/Option) to match its trending pattern. By connecting to your own [IB (InteractiveBrokers)](https://www.interactivebrokers.com){:target="_blank"} account, our Algo Bot will conduct the trading session under your monitor and also notify you through SMS, Telegram or Email as per your preference.
+
+LIATS（终身投资者算法交易系统）是敏捷且透明可见的，将最合适的**交易策略**应用于精心挑选的证券目标（股票/ETF/期货/外汇/期权）以匹配其当前的趋势特征。通过连接到您自己的 [IB (InteractiveBrokers)](https://www.interactivebrokers.com){:target="_blank"} 账户，我们的算法机器人将在您的监控下进行交易，并根据您的偏好以短信、Telegram或电子邮件的方式及时通知您。
 
 **Let our LIATS get you another payday!**
+
+**让我们的 LIATS 为您带来另一个发薪日！**
 
 ### Live Trading Account 真实交易账户
 
@@ -171,4 +175,4 @@ LIATS (Lifelong Investor Algorithmic Trading System) is Agile and Transparent, b
 
 Meet a group of like-minded friends who are willing to walk hand in hand on the road of lifelong investment. 邂逅一群志同道合的朋友，愿意在终身投资之路上携手同行。 
 
-If interested in our LIATS, Please reach out by [email](lifelonginvestorllc@gmail.com). 如果对我们的LIATS有兴趣，请[邮件](lifelonginvestorllc@gmail.com)联系。
+If interested in our LIATS, Please reach out by [Email](lifelonginvestorllc@gmail.com). 如果对我们的LIATS有兴趣，请[邮件](lifelonginvestorllc@gmail.com)联系。
