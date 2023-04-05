@@ -146,15 +146,33 @@ LIATS（终身投资者算法交易系统）是敏捷灵活且透明可见的，
     ]
   },
   "options": {
+    "animation": false,
     "responsive": true,
-    "aspectRatio": 2,
-    "layout": {
-      "padding": 0
-    },    
-    "title": {
-      "display": true,
-      "text": "Investment Performance (投资业绩表现)"
-    }  
+    "aspectRatio": 2,    
+    "plugins": {
+      "title": {
+        "display": true,
+        "color": "purple",
+        "font": { "size": 24 },
+        "text": "Investment Performance (投资业绩表现)"
+      },
+      "subtitle": {
+        "display": true,
+        "font": { "size": 18 },
+        "text": "1 unit = $10,000"
+      },      
+      "legend": {
+        "display": true,
+        "font": { "size": 18 }
+      },
+      "tooltip": {
+        "enabled": true,
+        "displayColors": false
+      },
+      "layout": {
+        "padding": 0
+      }      
+    }
   }  
 }
 ```
