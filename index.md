@@ -119,7 +119,7 @@ LIATS(Lifelong Investor Algorithmic Trading System) is agile and transparent, ap
 
 LIATS（终身投资者算法交易系统）是敏捷灵活且透明可见的，将最合适的**交易策略**应用于精心挑选的证券目标（股票/ETF/期货/外汇/期权）以匹配其当前的趋势特征。通过连接到您自己的 [IB (InteractiveBrokers)](https://www.interactivebrokers.com){:target="_blank"} 账户，我们的算法机器人将在您的监控下进行交易，并根据您的偏好以短信、电子电报或电子邮件的方式及时通知您。
 
-### Live Trading Account 真实交易账户
+### Live Trading Account 实时交易账户
 
 **A live trading account with a daily updated chart is worth a thousand words!**
 
@@ -158,7 +158,7 @@ LIATS（终身投资者算法交易系统）是敏捷灵活且透明可见的，
   }  
 }
 ```
-### Live Trading Daily Report 真实交易日志
+### Live Trading Journal 实时交易日志
 
 - LifelongInvest 04/03T08:00 Daily Report: closedTrades=0. cashRemaining=10000, marginRemaining=10000, totalPortfolioValue=10000.
 - LifelongInvest 04/04T08:00 Daily Report: closedTrades=1, avgDuration=4:45:50, profitLoss=135.00, totalFees=1.24, totalCapital=1680.00, holdingCost=26429.25, netProfitLoss=133.76(7.96%), unrealizedProfitLoss=57.68(0.22%). cashRemaining=10080.92, marginRemaining=8421.98, totalPortfolioValue=10101.98.
