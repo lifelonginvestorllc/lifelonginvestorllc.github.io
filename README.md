@@ -1,6 +1,10 @@
-# [LifelongInvestor](https://github.com/lifelonginvestorllc/lifelonginvestorllc.github.io.git)
+# [Lifelong Investor LLC](https://github.com/lifelonginvestorllc/lifelonginvestorllc.github.io.git)
 
-**LifelongInvestor | 终身投资者**
+**Lifelong Investor LLC | 终身投资者有限责任公司**
+
+**Let our LIATS get you another payday!**
+
+**让我们的 LIATS 为您带来另一个发薪日！**
 
 ## Install Jekyll
 

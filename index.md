@@ -117,15 +117,9 @@ As a lifelong investor, you need to reconcile and synthesize above two main scho
 
 LIATS(Lifelong Investor Algorithmic Trading System) is agile and transparent, applies the most suitable **trading strategy** to well-picked security target (Stock/ETF/Future/Forex/Option) to match its trending pattern. By connecting to your own [IB (InteractiveBrokers)](https://www.interactivebrokers.com){:target="_blank"} account, our Algo Bot will conduct the trading session under your monitor and also notify you through SMS, Telegram or Email as per your preference.
 
-LIATS（终身投资者算法交易系统）是敏捷且透明可见的，将最合适的**交易策略**应用于精心挑选的证券目标（股票/ETF/期货/外汇/期权）以匹配其当前的趋势特征。通过连接到您自己的 [IB (InteractiveBrokers)](https://www.interactivebrokers.com){:target="_blank"} 账户，我们的算法机器人将在您的监控下进行交易，并根据您的偏好以短信、Telegram或电子邮件的方式及时通知您。
-
-**Let our LIATS get you another payday!**
-
-**让我们的 LIATS 为您带来另一个发薪日！**
+LIATS（终身投资者算法交易系统）是敏捷灵活且透明可见的，将最合适的**交易策略**应用于精心挑选的证券目标（股票/ETF/期货/外汇/期权）以匹配其当前的趋势特征。通过连接到您自己的 [IB (InteractiveBrokers)](https://www.interactivebrokers.com){:target="_blank"} 账户，我们的算法机器人将在您的监控下进行交易，并根据您的偏好以短信、电子电报或电子邮件的方式及时通知您。
 
 ### Live Trading Account 真实交易账户
-
-#### Still in preparing... will come alive soon!
 
 **A live trading account with a daily updated chart is worth a thousand words!**
 
@@ -133,41 +127,41 @@ LIATS（终身投资者算法交易系统）是敏捷且透明可见的，将最
 {
   "type": "line",
   "data": {
-    "labels": ["4/1/23", "4/2/23", "4/3/23", "4/4/23", "4/5/23", "4/6/23", "4/7/23", "4/8/23", "4/9/23", "4/10/23", "4/11/23", "4/12/23"],
+    "labels": ["4/3/23", "4/4/23"],
     "datasets": [
       {
         "label": "Principal (本金)",
-        "lineTension": 0.3,
+        "lineTension": 0.2,
         "borderColor": "blue",
-        "pointRadius": 0,
-        "data": [5, 5, 5, 5, 5, 10, 10, 10, 10, 10, 15, 15]
+        "pointRadius": 3,
+        "data": [1, 1]
       },
       {
         "label": "Total Asset (总资产)",
-        "lineTension": 0.3,
+        "lineTension": 0.2,
         "borderColor": "gold",
-        "pointRadius": 0,
-        "data": [5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 25, 26]
+        "pointRadius": 3,
+        "data": [1, 1.01]
       }      
     ]
   },
   "options": {
     "responsive": true,
-    "aspectRatio": 3,
+    "aspectRatio": 2,
     "layout": {
       "padding": 0
     },    
     "title": {
       "display": true,
       "text": "Investment Performance (投资业绩表现)"
-    },
-    "legend": {
-      "display": true,
-      "position": "top"
-    }
+    }  
   }  
 }
 ```
+### Live Trading Daily Report 真实交易日志
+
+- LifelongInvest 04/03T08:00 Daily Report: closedTrades=0. cashRemaining=10000, marginRemaining=10000, totalPortfolioValue=10000.
+- LifelongInvest 04/04T08:00 Daily Report: closedTrades=1, avgDuration=4:45:50, profitLoss=135.00, totalFees=1.24, totalCapital=1680.00, holdingCost=26429.25, netProfitLoss=133.76(7.96%), unrealizedProfitLoss=57.68(0.22%). cashRemaining=10080.92, marginRemaining=8421.98, totalPortfolioValue=10101.98.
 
 ### Contact Us 联系我们
 
