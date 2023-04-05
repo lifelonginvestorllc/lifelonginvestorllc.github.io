@@ -187,4 +187,4 @@ LIATS（终身投资者算法交易系统）是敏捷灵活且透明可见的，
 
 Meet a group of like-minded friends who are willing to walk hand in hand on the road of lifelong investment. 邂逅一群志同道合的朋友，愿意在终身投资之路上携手同行。 
 
-If interested in our LIATS, Please reach out by [Email](lifelonginvestorllc@gmail.com). 如果对我们的LIATS有兴趣，请[邮件](lifelonginvestorllc@gmail.com)联系。
+If interested in our LIATS, Please reach out by [Email](mailto:lifelonginvestorllc@gmail.com). 如果对我们的LIATS有兴趣，请[邮件](mailto:lifelonginvestorllc@gmail.com)联系。
