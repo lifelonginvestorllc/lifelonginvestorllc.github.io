@@ -127,21 +127,21 @@ LIATS（终身投资者算法交易系统）是敏捷灵活且透明可见的，
 {
   "type": "line",
   "data": {
-    "labels": ["4/3/23", "4/4/23"],
+    "labels": ["4/3/23", "4/4/23", "4/5/23"],
     "datasets": [
       {
         "label": "Principal (本金)",
         "lineTension": 0.2,
         "borderColor": "blue",
         "pointRadius": 3,
-        "data": [1, 1]
+        "data": [1, 1, 1]
       },
       {
         "label": "Total Asset (总资产)",
         "lineTension": 0.2,
         "borderColor": "gold",
         "pointRadius": 3,
-        "data": [1, 1.01]
+        "data": [1, 1.01, 0.94]
       }      
     ]
   },
@@ -180,6 +180,7 @@ LIATS（终身投资者算法交易系统）是敏捷灵活且透明可见的，
 
 - LifelongInvest 04/03T08:00 Daily Report: closedTrades=0. cashRemaining=10000, marginRemaining=10000, totalPortfolioValue=10000.
 - LifelongInvest 04/04T08:00 Daily Report: closedTrades=1, avgDuration=4:45:50, profitLoss=135.00, totalFees=1.24, totalCapital=1680.00, holdingCost=26429.25, netProfitLoss=133.76(7.96%), unrealizedProfitLoss=57.68(0.22%). cashRemaining=10080.92, marginRemaining=8421.98, totalPortfolioValue=10101.98.
+- LifelongInvest 04/05T20:00 Daily Report: closedTrades=0. cashRemaining=10014.16, marginRemaining=2659.39, totalPortfolioValue=9379.39.
 
 ### Contact Us 联系我们
 
