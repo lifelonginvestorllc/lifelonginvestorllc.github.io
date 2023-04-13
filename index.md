@@ -127,21 +127,21 @@ LIATS（终身投资者算法交易系统）是敏捷灵活且透明可见的，
 {
   "type": "line",
   "data": {
-    "labels": ["4/3/23", "4/4/23", "4/5/23", "4/6/23", "4/7/23", "4/8/23", "4/9/23", "4/10/23", "4/11/23"],
+    "labels": ["4/3/23", "4/4/23", "4/5/23", "4/6/23", "4/7/23", "4/8/23", "4/9/23", "4/10/23", "4/11/23", "4/12/23"],
     "datasets": [
       {
         "label": "Principal (本金)",
         "lineTension": 0.2,
         "borderColor": "blue",
         "pointRadius": 3,
-        "data": [1, 1, 1, 2, 2.1, 2.1, 2.1, 2.1, 5]
+        "data": [1, 1, 1, 2, 2.1, 2.1, 2.1, 2.1, 5, 5]
       },
       {
         "label": "Total Asset (总资产)",
-        "lineTension": 0.2,
         "borderColor": "gold",
+        "lineTension": 0.2,
         "pointRadius": 3,
-        "data": [1, 1.01, 0.94, 1.98, 2.21, 2.21, 2.21, 2.16, 5.03]
+        "data": [1, 1.01, 0.94, 1.98, 2.21, 2.21, 2.21, 2.16, 5.03, 5.07]
       }      
     ]
   },
@@ -187,6 +187,7 @@ LIATS（终身投资者算法交易系统）是敏捷灵活且透明可见的，
 - LifelongInvest 04/09T20:00 Daily Report: closedTrades=0. cashRemaining=21419.88, marginRemaining=18702.00, totalPortfolioValue=22062.00.
 - LifelongInvest 04/10T20:00 Daily Report: closedTrades=1, avgDuration=0:00:00, profitLoss=262.00, totalFees=2.48, totalCapital=3360.00, netProfitLoss=259.52(7.72%), unrealizedProfitLoss=0.00(0.00%), holdingCost=0.00. cashRemaining=21619.36, marginRemaining=21619.36, totalPortfolioValue=21619.36.
 - LifelongInvest 04/11T20:00 Daily Report: closedTrades=0, unrealizedProfitLoss=24.14(-0.13%), holdingCost=167673.00. cashRemaining=50288.69, marginRemaining=44702.83, totalPortfolioValue=50312.83.
+- LifelongInvest 04/12T20:00 Daily Report: closedTrades=6, avgDuration=5:28:50, profitLoss=1671.01, totalFees=17.46, totalCapital=16830.00, netProfitLoss=1653.55(9.83%), unrealizedProfitLoss=-1052.42(-0.67%), holdingCost=156224.00. cashRemaining=51770.42, marginRemaining=40638.00, totalPortfolioValue=50718.00.
 
 ### Contact Us 联系我们
 
