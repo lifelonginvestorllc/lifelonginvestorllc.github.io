@@ -137,7 +137,7 @@ LIATS（终身投资者算法交易系统）是敏捷灵活且透明可见的，
         "data": [1, 1, 1, 2, 2.1, 2.1, 2.1, 2.1, 5, 5, 5, 5, 5, 5, 5]
       },
       {
-        "label": "Total Asset (总资产)",
+        "label": "Total Asset including unrealized P&L (总资产包含未实现损益)",
         "borderColor": "gold",
         "lineTension": 0.2,
         "pointRadius": 3,
