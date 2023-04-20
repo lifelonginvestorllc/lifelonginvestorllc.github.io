@@ -127,21 +127,21 @@ LIATS（终身投资者算法交易系统）是敏捷灵活且透明可见的，
 {
   "type": "line",
   "data": {
-    "labels": ["4/3/23", "4/4/23", "4/5/23", "4/6/23", "4/7/23", "4/8/23", "4/9/23", "4/10/23", "4/11/23", "4/12/23", "4/13/23", "4/14/23", "4/15/23", "4/16/23", "4/17/23", "4/18/23"],
+    "labels": ["4/3/23", "4/4/23", "4/5/23", "4/6/23", "4/7/23", "4/8/23", "4/9/23", "4/10/23", "4/11/23", "4/12/23", "4/13/23", "4/14/23", "4/15/23", "4/16/23", "4/17/23", "4/18/23", "4/19/23"],
     "datasets": [
       {
         "label": "Principal (本金)",
         "lineTension": 0.2,
         "borderColor": "blue",
         "pointRadius": 3,
-        "data": [1, 1, 1, 2, 2.1, 2.1, 2.1, 2.1, 5, 5, 5, 5, 5, 5, 5, 5]
+        "data": [1, 1, 1, 2, 2.1, 2.1, 2.1, 2.1, 5, 5, 5, 5, 5, 5, 5, 5, 5]
       },
       {
         "label": "Total Asset including unrealized P&L (总资产包含未实现损益)",
         "borderColor": "gold",
         "lineTension": 0.2,
         "pointRadius": 3,
-        "data": [1, 1.01, 0.94, 1.98, 2.21, 2.21, 2.21, 2.16, 5.03, 5.07, 5.22, 5.06, 5.02, 4.95, 4.70, 4.65]
+        "data": [1, 1.01, 0.94, 1.98, 2.21, 2.21, 2.21, 2.16, 5.03, 5.07, 5.22, 5.06, 5.02, 4.95, 4.70, 4.65, 4.36]
       }      
     ]
   },
@@ -194,6 +194,7 @@ LIATS（终身投资者算法交易系统）是敏捷灵活且透明可见的，
 - LifelongInvest 04/16T20:00 Daily Report: closedTrades=0, unrealizedProfitLoss=-2314.07(-0.45%), holdingCost=513789.04. cashRemaining=51857.23, marginRemaining=37183.16, totalPortfolioValue=49543.16.
 - LifelongInvest 04/17T20:00 Daily Report: closedTrades=2, avgDuration=6:48:53, profitLoss=313.16, totalFees=3.33, totalCapital=7828.80, netProfitLoss=309.83(3.96%), unrealizedProfitLoss=-4189.58(-0.66%), holdingCost=634337.34. cashRemaining=45139.96, marginRemaining=29388.92, totalPortfolioValue=47042.55.
 - LifelongInvest 04/18T20:00 Daily Report: closedTrades=1, avgDuration=0:00:00, profitLoss=264.00, totalFees=2.48, totalCapital=3360.00, netProfitLoss=261.52(7.78%), unrealizedProfitLoss=-4475.35(-0.65%), holdingCost=687425.72. cashRemaining=44854.57, marginRemaining=25479.85, totalPortfolioValue=46496.08.
+- LifelongInvest 04/19T20:00 Daily Report: closedTrades=2, avgDuration=9:53:50, profitLoss=676.00, totalFees=3.72, totalCapital=6720.00, netProfitLoss=672.28(10.00%), unrealizedProfitLoss=-4662.03(-0.58%), holdingCost=801284.68. cashRemaining=42235.01, marginRemaining=20383.33, totalPortfolioValue=43628.75.
 
 ### Contact Us 联系我们
 
