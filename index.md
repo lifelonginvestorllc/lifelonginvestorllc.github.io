@@ -127,28 +127,28 @@ LIATS（终身投资者算法交易系统）是敏捷灵活且透明可见的，
 {
   "type": "line",
   "data": {
-    "labels": ["4/3/23", "4/4/23", "4/5/23", "4/6/23", "4/7/23", "4/8/23", "4/9/23", "4/10/23", "4/11/23", "4/12/23", "4/13/23", "4/14/23", "4/15/23", "4/16/23", "4/17/23", "4/18/23", "4/19/23", "4/20/23", "4/21/23", "4/22/23", "4/23/23", "4/24/23", "4/25/23", "4/26/23", "4/27/23", "4/28/23", "5/1/23", "5/2/23"],
+    "labels": ["4/3/23", "4/4/23", "4/5/23", "4/6/23", "4/7/23", "4/8/23", "4/9/23", "4/10/23", "4/11/23", "4/12/23", "4/13/23", "4/14/23", "4/15/23", "4/16/23", "4/17/23", "4/18/23", "4/19/23", "4/20/23", "4/21/23", "4/22/23", "4/23/23", "4/24/23", "4/25/23", "4/26/23", "4/27/23", "4/28/23", "5/1/23", "5/2/23", "5/3/23"],
     "datasets": [
       {
         "label": "Principal (本金)",
         "lineTension": 0.3,
         "borderColor": "blue",
         "pointRadius": 3,
-        "data": [1, 1, 1, 2, 2.1, 2.1, 2.1, 2.1, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 10, 10, 10, 10]
+        "data": [1, 1, 1, 2, 2.1, 2.1, 2.1, 2.1, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 10, 10, 10, 10, 10]
       },
       {
         "label": "Total Asset including unrealized P&L (总资产包含未实现损益)",
         "borderColor": "gold",
         "lineTension": 0.3,
         "pointRadius": 3,
-        "data": [1, 1.01, 0.94, 1.98, 2.21, 2.21, 2.21, 2.16, 5.03, 5.07, 5.22, 5.06, 5.02, 4.95, 4.70, 4.65, 4.36, 4.85, 4.83, 4.83, 4.89, 5.49, 5.51, 5.28, 10.92, 11.32, 11.15, 11.38]
+        "data": [1, 1.01, 0.94, 1.98, 2.21, 2.21, 2.21, 2.16, 5.03, 5.07, 5.22, 5.06, 5.02, 4.95, 4.70, 4.65, 4.36, 4.85, 4.83, 4.83, 4.89, 5.49, 5.51, 5.28, 10.92, 11.32, 11.15, 11.38, 11.18]
       },
       {
         "label": "Benchmark (SPY)",
         "borderColor": "#F62217",
         "lineTension": 0.3,
         "pointRadius": 3,
-        "data": [1.0, 0.99, 0.99, 2.1, 2.1, 2.1, 2.1, 2.1, 5.0, 4.98, 5.04, 5.03, 5.03, 5.03, 5.05, 5.05, 5.05, 5.02, 5.03, 5.03, 5.03, 5.03, 4.95, 4.93, 10.03, 10.11, 10.10, 9.99]
+        "data": [1.0, 0.99, 0.99, 2.1, 2.1, 2.1, 2.1, 2.1, 5.0, 4.98, 5.04, 5.03, 5.03, 5.03, 5.05, 5.05, 5.05, 5.02, 5.03, 5.03, 5.03, 5.03, 4.95, 4.93, 10.03, 10.11, 10.10, 9.99, 9.92]
       }
     ]
   },
@@ -213,6 +213,7 @@ LIATS（终身投资者算法交易系统）是敏捷灵活且透明可见的，
 - LifelongInvest 04/28T20:00 Daily Report: closedTrades=6, avgDuration=5:05:28, profitLoss=2805.18, totalFees=18.66, totalCapital=33051.78, totalQuantity=53.0, netProfitLoss=2786.52(8.43%), unrealizedProfitLoss=292.37(0.12%), holdingQuantity=200.0, holdingCost=248861.73. cashRemaining=94433.73, marginRemaining=99407.42, totalPortfolioValue=113155.01.
 - LifelongInvest 05/01T20:00 Daily Report: closedTrades=1, avgDuration=2 days, 18:45:02, profitLoss=662.50, totalFees=6.20, totalCapital=8400.00, totalQuantity=5.0, netProfitLoss=656.30(7.81%), unrealizedProfitLoss=-2284.75(-0.31%), holdingQuantity=208.0, holdingCost=726125.48. cashRemaining=95365.75, marginRemaining=82577.66, totalPortfolioValue=111464.36.
 - LifelongInvest 05/02T20:00 Daily Report: closedTrades=4, avgDuration=23:50:10, profitLoss=1611.88, totalFees=16.22, totalCapital=15150.00, totalQuantity=8.0, netProfitLoss=1595.66(10.53%), unrealizedProfitLoss=306.67(0.06%), holdingQuantity=320.0, holdingCost=522752.65. cashRemaining=84913.80, marginRemaining=78344.37, totalPortfolioValue=113843.17.
+- LifelongInvest 05/03T20:00 Daily Report: closedTrades=5, avgDuration=5:05:16, profitLoss=2245.64, totalFees=13.74, totalCapital=23550.00, totalQuantity=13.0, netProfitLoss=2231.90(9.48%), unrealizedProfitLoss=-2666.05(-0.48%), holdingQuantity=328.0, holdingCost=554715.11. cashRemaining=85940.13, marginRemaining=64077.71, totalPortfolioValue=111807.21.
 
 ### Contact Us 联系我们
 
