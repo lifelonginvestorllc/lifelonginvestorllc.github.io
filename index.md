@@ -183,6 +183,54 @@ LIATS（终身投资者算法交易系统）是敏捷灵活且透明可见的，
   }  
 }
 ```
+
+
+### Live Trading Account 实时交易账户
+
+**A live trading account with a daily updated chart is worth a thousand words!**
+
+<div>
+  <canvas id="performanceChart"></canvas>
+</div>
+
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js([SOURCES.jquery, SOURCES.d3], function() {
+
+    function drawPerformanceChart(data) {
+      const canvas = document.getElementById('performanceChart');
+      //const data = [{x: 'Jan', net: 100, cogs: 50, gm: 50}, {x: 'Feb', net: 120, cogs: 55, gm: 75}];
+      console.log(data)
+      var labels = data.map(function(d) {return d.Month});
+      var netData = data.map(function(d) {return d.net});
+      var cogsData = data.map(function(d) {return d.cogs});
+      var gmData = data.map(function(d) {return d.gm});
+      const config = {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'Net sales',
+            data: netData
+          }, {
+            label: 'Cost of goods sold',
+            data: cogsData
+          }, {
+            label: 'Gross margin',
+            data: gmData
+          }]
+        },
+      }
+      new Chart(canvas, config);
+    }
+  
+    $(function() {
+      d3.csv("performance.csv").then(drawPerformanceChart);
+    });
+  });
+})();  
+</script>
+
 ### Live Trading Journal 实时交易日志
 
 - LifelongInvest 04/03T08:00 Daily Report: closedTrades=0. cashRemaining=10000, marginRemaining=10000, totalPortfolioValue=10000.

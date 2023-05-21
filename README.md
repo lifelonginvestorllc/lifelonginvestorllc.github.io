@@ -18,6 +18,10 @@
  
 % bundle exec jekyll serve --livereload
 
+## TeXt Theme
+
+https://github.com/kitian616/jekyll-TeXt-theme
+
 ## Edit a post
 
 - Add a link:
