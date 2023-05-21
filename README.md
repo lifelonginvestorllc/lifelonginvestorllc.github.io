@@ -18,6 +18,10 @@
  
 % bundle exec jekyll serve --livereload
 
+## TeXt Theme
+
+https://github.com/kitian616/jekyll-TeXt-theme
+
 ## Edit a post
 
 - Add a link:
@@ -31,7 +35,7 @@
 ```
 ![Anatomy of CNS](/assets/images/architect/anatomy-of-cloud-native-system.png)
 <img src="/assets/images/investor/investor.svg" width="32" />
-![Smile Curve](/assets/images/investor/smile-curve-line.png){:.rounded.width60}
+![Smile Curve](/assets/images/investor/smile-curve-line.png){:.rounded.medium}
 ```
 
 - Add a Youtube Video:
