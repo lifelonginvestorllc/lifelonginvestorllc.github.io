@@ -123,72 +123,6 @@ LIATS（终身投资者算法交易系统）是敏捷灵活且透明可见的，
 
 **A live trading account with a daily updated chart is worth a thousand words!**
 
-```chart
-{
-  "type": "line",
-  "data": {
-    "labels": ["4/3/23", "4/4/23", "4/5/23", "4/6/23", "4/7/23", "4/8/23", "4/9/23", "4/10/23", "4/11/23", "4/12/23", "4/13/23", "4/14/23", "4/15/23", "4/16/23", "4/17/23", "4/18/23", "4/19/23", "4/20/23", "4/21/23", "4/22/23", "4/23/23", "4/24/23", "4/25/23", "4/26/23", "4/27/23", "4/28/23", "5/1/23", "5/2/23", "5/3/23", "5/4/23", "5/5/23", "5/8/23", "5/9/23", "5/10/23", "5/11/23", "5/12/23", "5/15/23", "5/16/23", "5/17/23", "5/18/23", "5/19/23"],
-    "datasets": [
-      {
-        "label": "Principal (本金)",
-        "lineTension": 0.3,
-        "borderColor": "green",
-        "pointRadius": 3,
-        "data": [1, 1, 1, 2, 2.1, 2.1, 2.1, 2.1, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 10, 10, 10, 10, 10, 10, 10, 10, 10, 15, 15, 15, 15, 15, 15, 15, 15]
-      },
-      {
-        "label": "Total Market Value (总市值)",
-        "borderColor": "gold",
-        "lineTension": 0.3,
-        "pointRadius": 3,
-        "data": [1, 1.01, 0.94, 1.98, 2.21, 2.21, 2.21, 2.16, 5.03, 5.07, 5.22, 5.06, 5.02, 4.95, 4.70, 4.65, 4.36, 4.85, 4.83, 4.83, 4.89, 5.49, 5.51, 5.28, 10.92, 11.32, 11.15, 11.38, 11.18, 11.40, 12.06, 11.68, 11.40, 17.64, 17.84, 17.00, 17.01, 16.88, 16.06, 14.98, 13.91]
-      },
-      {
-        "label": "Benchmark S&P 500 (基准标普500)",
-        "borderColor": "blue",
-        "lineTension": 0.3,
-        "pointRadius": 3,
-        "data": [1.0, 0.99, 0.99, 2.1, 2.1, 2.1, 2.1, 2.1, 5.0, 4.98, 5.04, 5.03, 5.03, 5.03, 5.05, 5.05, 5.05, 5.02, 5.03, 5.03, 5.03, 5.03, 4.95, 4.93, 10.03, 10.11, 10.10, 9.99, 9.92, 9.85, 10.03, 10.03, 9.99, 15.04, 15.01, 14.99, 15.04, 14.94, 15.12, 15.27, 15.24]
-      }
-    ]
-  },
-  "options": {
-    "animation": false,
-    "responsive": true,
-    "aspectRatio": 2,
-    "plugins": {
-      "title": {
-        "display": true,
-        "color": "purple",
-        "font": { "size": 24 },
-        "text": "Investment Performance (投资业绩表现)"
-      },
-      "subtitle": {
-        "display": true,
-        "font": { "size": 18 },
-        "text": "1 unit = $10,000"
-      },      
-      "legend": {
-        "display": true,
-        "font": { "size": 18 }
-      },
-      "tooltip": {
-        "enabled": true,
-        "displayColors": false
-      },
-      "layout": {
-        "padding": 0
-      }
-    }
-  }  
-}
-```
-
-
-### Live Trading Account 实时交易账户
-
-**A live trading account with a daily updated chart is worth a thousand words!**
-
 <div>
   <canvas id="performanceChart"></canvas>
 </div>
@@ -199,27 +133,64 @@ LIATS（终身投资者算法交易系统）是敏捷灵活且透明可见的，
 
     function drawPerformanceChart(data) {
       const canvas = document.getElementById('performanceChart');
-      //const data = [{x: 'Jan', net: 100, cogs: 50, gm: 50}, {x: 'Feb', net: 120, cogs: 55, gm: 75}];
       console.log(data)
-      var labels = data.map(function(d) {return d.Month});
-      var netData = data.map(function(d) {return d.net});
-      var cogsData = data.map(function(d) {return d.cogs});
-      var gmData = data.map(function(d) {return d.gm});
+      var labels = data.map(function(d) {return d.Date});
+      var principal = data.map(function(d) {return d.Principal});
+      var aum = data.map(function(d) {return d.AUM});
+      var benchmark = data.map(function(d) {return d.Benchmark});
       const config = {
         type: 'line',
         data: {
           labels: labels,
           datasets: [{
-            label: 'Net sales',
-            data: netData
+            label: "Principal (本金)",
+            lineTension: 0.3,
+            borderColor: "green",
+            pointRadius: 3,
+            data: principal
           }, {
-            label: 'Cost of goods sold',
-            data: cogsData
+            label: "Total Market Value (总市值)",
+            borderColor: "gold",
+            lineTension: 0.3,
+            pointRadius: 3,
+            data: aum
           }, {
-            label: 'Gross margin',
-            data: gmData
+            label: "Benchmark S&P 500 (基准标普500)",
+            borderColor: "blue",
+            lineTension: 0.3,
+            pointRadius: 3,
+            data: benchmark
           }]
         },
+        options: {
+          animation: false,
+          responsive: true,
+          aspectRatio: 2,
+          plugins: {
+            title: {
+              display: true,
+              color: "purple",
+              font: { size: 24 },
+              text: "Investment Performance (投资业绩表现)"
+            },
+            subtitle: {
+              display: true,
+              font: { size: 18 },
+              text: "1 unit = $10,000"
+            },      
+            legend: {
+              display: true,
+              font: { size: 18 }
+            },
+            tooltip: {
+              enabled: true,
+              displayColors: false
+            },
+            layout: {
+              padding: 0
+            }
+          }
+        }
       }
       new Chart(canvas, config);
     }
