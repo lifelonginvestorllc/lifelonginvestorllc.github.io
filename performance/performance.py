@@ -37,6 +37,8 @@ class performance:
             raise Exception("Date has to be in the header of the dataframe")
         filteredDF["Date"] = pd.to_datetime(filteredDF["Date"]).dt.strftime(config.dateFormat)
         filteredDF.set_index("Date", inplace=True)
+        if reportCategory == "Deposits And Withdrawals":
+            return self.processDepositReport(filteredDF)
         return filteredDF
 
     def mergeDataByColumn(self, *dfs, join="outer", setNumericCol=True):
@@ -64,6 +66,11 @@ class performance:
         df = df[config.performanceColumns][df["Date"] >= startingDate]
         if save:
             df.to_csv(config.basePath + config.performanceSaveFileName, index=False)
+        return df
+
+    def processDepositReport(self, df: pd.DataFrame):
+        df['Amount'] = df['Amount'].apply(pd.to_numeric)
+        df = df.groupby('Date').agg({"Type": "first", "Amount": sum})
         return df
 
 
