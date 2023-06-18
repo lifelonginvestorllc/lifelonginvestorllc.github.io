@@ -155,28 +155,32 @@ If interested in our LIATS, Please reach out by [Email](mailto:lifelonginvestorl
           labels: labels,
           datasets: [{
             label: "Principal (本金)",
-            lineTension: 0.3,
+            lineTension: 0.2,
             borderColor: "green",
-            pointRadius: 3,
+            borderWidth: 1.5,
+            pointRadius: 1,
             data: principal
           }, {
             label: "Total Market Value (总市值)",
+            lineTension: 0.2,
             borderColor: "gold",
-            lineTension: 0.3,
-            pointRadius: 3,
+            borderWidth: 2.25,
+            pointRadius: 1.5,
             data: aum
           }, {
             label: "Benchmark S&P 500 (基准标普500)",
-            borderColor: "blue",
-            lineTension: 0.3,
-            pointRadius: 3,
+            lineTension: 0.2,
+            borderColor: "orange",
+            borderWidth: 1.75,
+            pointRadius: 1,
             data: benchmark
           }]
         },
         options: {
           animation: false,
           responsive: true,
-          aspectRatio: 2,
+          aspectRatio: 1.25,
+          devicePixelRatio: 2,
           plugins: {
             title: {
               display: true,
