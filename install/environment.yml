@@ -1,0 +1,21 @@
+name: env_py39
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - pandas==1.4.2
+  - pandas-datareader==0.10.0
+  - numpy==1.21.5
+  - scikit-learn==1.0.2
+  - matplotlib==3.5.1
+  - xlwings==0.24.9
+  - xlrd==2.0.1
+  - XlsxWriter==3.0.3
+  - yfinance==0.2.18
+  - urllib3==1.26.9
+  - statsmodels==0.13.2
+  - scipy==1.7.3
+  - regex==2022.3.15
+  - pytest==7.1.1
+  - openpyxl==3.0.9
+  - seaborn==0.11.2

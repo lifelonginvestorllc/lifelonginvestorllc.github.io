@@ -50,23 +50,22 @@ class performance:
         self.mergedReportData = result
         return self.mergedReportData
 
-    def computePerformance(self, startingDate="04/03/2023", save=True):
+    def computePerformance(self, save=True):
         if len(self.mergedReportData) == 0:
             raise Exception("The merged report data is not ready yet.")
 
         df = self.mergedReportData.copy(deep=True).reset_index()
         df['Benchmark'] = df['Amount']
         for i in range(1, len(df)):
-            df.loc[i, 'Benchmark'] = df.loc[i - 1, 'Benchmark'] * (df.loc[i - 1, 'BM1Return'] / 100 + 1) + df.loc[i, 'Amount']
-        df['Benchmark'] = (df['Benchmark'] / 10000).round(decimals=2)
-        df['Principal'] = (df['Amount'].cumsum() / 10000).round(decimals=2)
-        df['AUM'] = (df['NAV'] / 10000).round(decimals=2)
-        df = df[config.performanceColumns][df["Date"] >= startingDate]
+            df.loc[i, 'Benchmark'] = df.loc[i - 1, 'Benchmark'] * (df.loc[i-1, 'BM1Return'] / 100 + 1) + df.loc[i, 'Amount']
+        df['Benchmark'] = df['Benchmark'] / 10000
+        df['Principal'] = df['Amount'].cumsum() / 10000
+        df['AUM'] = df['NAV'] / 10000
+        df = df[config.performanceColumns]
         if save:
             df.to_csv(config.basePath + config.performanceSaveFileName, index=False)
         return df
 
-
 if __name__ == '__main__':
     report = performance()
-    report.readIBReport()  # read and compute performance
+    report.readIBReport() # read and compute performance
