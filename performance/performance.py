@@ -36,6 +36,7 @@ class performance:
         if "Date" not in filteredDF.columns:
             raise Exception("Date has to be in the header of the dataframe")
         filteredDF["Date"] = pd.to_datetime(filteredDF["Date"]).dt.strftime(config.dateFormat)
+
         filteredDF.set_index("Date", inplace=True)
         if reportCategory == "Deposits And Withdrawals":
             return self.processDepositReport(filteredDF)
@@ -64,6 +65,8 @@ class performance:
         df['Principal'] = (df['Amount'].cumsum() / 10000).round(decimals=2)
         df['AUM'] = (df['NAV'] / 10000).round(decimals=2)
         df = df[config.performanceColumns][df["Date"] >= startingDate]
+        df['Date'] = pd.to_datetime(df['Date'])
+        df["Date"] = df['Date'].dt.month.astype(str) + '/' + df['Date'].dt.day.astype(str) + '/' + df['Date'].dt.strftime('%y')
         if save:
             df.to_csv(config.basePath + config.performanceSaveFileName, index=False)
         return df

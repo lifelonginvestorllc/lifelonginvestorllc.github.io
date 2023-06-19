@@ -7,8 +7,8 @@ if today.weekday() < 5:
     NAVFilename = "IBNAV_{0}.csv".format(today.strftime('%Y%m%d'))
 else:
     raise Exception("No need to update performance since today is not weekday.")
-dateFormat = '%m/%d/%Y'
-# dateFormat = '%-m/%-d/%-y'
+# dateFormat = '%m/%d/%Y'
+dateFormat = "%m/%d/%y"
 basePath = 'C:/Dev/LifelongInvestorWebsite/lifelonginvestorllc.github.io/'
 basePathReport = 'C:/Dev/LifelongInvestorWebsite/lifelonginvestorllc.github.io/reports/'
 numericalColumns = ["Amount", "BM1Return", "Commodities", "Equities", "Fixed Income", "NAV"]
