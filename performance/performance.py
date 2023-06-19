@@ -11,7 +11,7 @@ import yfinance as yf
 yf.pdr_override()
 
 
-class performance:
+class Performance:
     def __init__(self):
         self.IBRawData = None
         self.NAVData = None
@@ -64,19 +64,21 @@ class performance:
         df['Benchmark'] = (df['Benchmark'] / 10000).round(decimals=2)
         df['Principal'] = (df['Amount'].cumsum() / 10000).round(decimals=2)
         df['AUM'] = (df['NAV'] / 10000).round(decimals=2)
+
         df = df[config.performanceColumns][df["Date"] >= startingDate]
         df['Date'] = pd.to_datetime(df['Date'])
         df["Date"] = df['Date'].dt.month.astype(str) + '/' + df['Date'].dt.day.astype(str) + '/' + df['Date'].dt.strftime('%y')
+
         if save:
             df.to_csv(config.basePath + config.performanceSaveFileName, index=False)
         return df
 
     def processDepositReport(self, df: pd.DataFrame):
         df['Amount'] = df['Amount'].apply(pd.to_numeric)
-        df = df.groupby('Date').agg({"Type": "first", "Amount": sum})
-        return df
+        res = df.groupby('Date').agg({"Type": "first", "Amount": sum})
+        return res
 
 
 if __name__ == '__main__':
-    report = performance()
+    report = Performance()
     report.readIBReport()  # read and compute performance
