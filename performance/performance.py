@@ -67,7 +67,8 @@ class Performance:
 
         df = df[config.performanceColumns][df["Date"] >= startingDate]
         df['Date'] = pd.to_datetime(df['Date'])
-        df["Date"] = df['Date'].dt.month.astype(str) + '/' + df['Date'].dt.day.astype(str) + '/' + df['Date'].dt.strftime('%y')
+        # df["Date"] = df['Date'].dt.month.astype(str) + '/' + df['Date'].dt.day.astype(str) + '/' + df['Date'].dt.strftime('%y')
+        df["Date"] = df['Date'].dt.strftime('%m/%d/%y')
 
         if save:
             df.to_csv(config.basePath + config.performanceSaveFileName, index=False)
