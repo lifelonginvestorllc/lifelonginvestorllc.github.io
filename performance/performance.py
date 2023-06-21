@@ -1,14 +1,16 @@
 from typing import List
 
 import pandas as pd
+import csv
 import os
 import numpy as np
 import datetime as dt
 from pandas_datareader import data as pdr
 import config
-import yfinance as yf
 
-yf.pdr_override()
+
+# import yfinance as yf
+# yf.pdr_override()
 
 
 class Performance:
@@ -21,8 +23,11 @@ class Performance:
         self.performanceData = None
         self.basePath = config.basePath
 
-    def readIBReport(self):
-        self.IBRawData = pd.read_csv(config.basePathReport + config.NAVFilename, skiprows=2, header=None, skip_blank_lines=True)
+    def readIBReport(self, isExcel=True):
+        if isExcel:
+            self.IBRawData = pd.read_excel(config.basePathReport + config.NAVFilename, skiprows=2, header=None)
+        else:
+            self.IBRawData = pd.read_csv(config.basePathReport + config.NAVFilename, skiprows=2, header=None, skip_blank_lines=True)
         self.NAVData = self.filterIBReport(self.IBRawData, config.reportCategory["Allocation by Asset Class"])
         self.benchmarkData = self.filterIBReport(self.IBRawData, config.reportCategory["Time Period Benchmark Comparison"])
         self.depositAndWithdrawData = self.filterIBReport(self.IBRawData, config.reportCategory["Deposits And Withdrawals"])
@@ -35,7 +40,11 @@ class Performance:
         filteredDF = tempDF.rename(columns=tempDF.iloc[0]).drop(tempDF.index[0]).dropna(axis=1)[config.columnName[reportCategory]]
         if "Date" not in filteredDF.columns:
             raise Exception("Date has to be in the header of the dataframe")
-        filteredDF["Date"] = pd.to_datetime(filteredDF["Date"]).dt.strftime(config.dateFormat)
+        if reportCategory == "Allocation by Asset Class":
+            filteredDF["Date"] = pd.to_datetime(filteredDF["Date"], format='%Y%m%d')
+            filteredDF["Date"] = pd.to_datetime(filteredDF["Date"]).dt.strftime(config.dateFormat)
+        else:
+            filteredDF["Date"] = pd.to_datetime(filteredDF["Date"]).dt.strftime(config.dateFormat)
 
         filteredDF.set_index("Date", inplace=True)
         if reportCategory == "Deposits And Withdrawals":
@@ -78,6 +87,23 @@ class Performance:
         df['Amount'] = df['Amount'].apply(pd.to_numeric)
         res = df.groupby('Date').agg({"Type": "first", "Amount": sum})
         return res
+
+    def fix_csv_file(self, file_path):
+        with open(file_path, 'r', newline='') as file:
+            reader = csv.reader(file)
+            lines = list(reader)
+
+        with open(file_path, 'w', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerows(self.fix_lines(lines))
+
+    def fix_lines(self, lines):
+        fixed_lines = []
+        for line in lines:
+            if line and not line[-1].endswith(','):
+                line[-1] += ','
+            fixed_lines.append(line)
+        return fixed_lines
 
 
 if __name__ == '__main__':

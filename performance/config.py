@@ -2,9 +2,13 @@ import os
 import datetime
 
 today = datetime.datetime.today()
-today = datetime.datetime(2023, 6, 16)
+today = datetime.datetime(2023, 6, 19)
+isExcel = True
 if today.weekday() < 5:
-    NAVFilename = "IBNAV_{0}.csv".format(today.strftime('%Y%m%d'))
+    if isExcel:
+        NAVFilename = "IBNAV_{0}.xlsx".format(today.strftime('%Y%m%d'))
+    else:
+        NAVFilename = "IBNAV_{0}.csv".format(today.strftime('%Y%m%d'))
 else:
     raise Exception("No need to update performance since today is not weekday.")
 # dateFormat = '%m/%d/%Y'
