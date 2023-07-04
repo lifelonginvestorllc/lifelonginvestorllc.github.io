@@ -499,7 +499,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                         </ol>
                         <div class="subheader">
                             <h1 class="subheader-title">
-                                <i class='subheader-icon fal fa-globe'></i> Investing in Action <span class='fw-300'>Performance</span> <sup class='badge badge-primary fw-500'>Trading</sup>
+                                <i class='subheader-icon fal fa-globe'></i> Investing in Action <span class='fw-300'>Performance</span>
                                 <small>
                                     A live trading account with a daily updated chart is worth a thousand words!
                                 </small>
@@ -1073,8 +1073,8 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 						+ src/../jquery-snippets.js (core) -->
         <script src="js/vendors.bundle.js"></script>
         <script src="js/app.bundle.js"></script>
-        <!-- plugin Chart.js : MIT license -->
-        <script src="js/statistics/chartjs/chart.umd.min.js"></script>
+        <!-- plugin Chart.js, 4.x version not resizing properly -->
+        <script src="js/statistics/chartjs/chart.min.js"></script>
         <!-- dependency for c3 charts : this dependency is a BSD license with clause 3 -->
         <script src="js/statistics/d3/d3.js"></script>
         <script>
@@ -1118,6 +1118,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                             responsive: true,
                             aspectRatio: 2.0,
                             devicePixelRatio: 2,
+                            maintainAspectRatio: true,
                             plugins: {
                                 title: {
                                     display: true,
@@ -1157,9 +1158,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                     d3.csv("performance.csv").then(drawPerformanceChart);
                     d3.text("dailyReport.txt").then(loadDailyReportList);
                 });
-
             });
-
         </script>
     </body>
     <!-- END Body -->
