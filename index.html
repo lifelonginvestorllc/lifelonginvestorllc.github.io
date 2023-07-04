@@ -29,8 +29,10 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
         <!-- Place favicon.ico in the root directory -->
         <link rel="apple-touch-icon" sizes="180x180" href="img/logo/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="img/logo/favicon-32x32.png">
-		<link rel="manifest" href="manifest.webapp" />        
+        <link rel="icon" type="image/png" sizes="16x16" href="img/logo/favicon-16x16.png">
+        <link rel="manifest" href="img/logo/site.webmanifest">
         <link rel="mask-icon" href="img/logo/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="stylesheet" media="screen, print" href="css/statistics/chartjs/chartjs.css">
         <!-- You can add your own stylesheet here to override any styles that comes before it
 		<link rel="stylesheet" media="screen, print" href="css/your_styles.css">-->
     </head>
@@ -64,7 +66,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
         <script>
             /**
              *	This script should be placed right after the body tag for fast execution
-             *	Note: the script is written in pure javascript and does not depend on thirdparty library
+             *	Note: the script is written in pure javascript and does not depend on third party library
              **/
             'use strict';
 
@@ -151,14 +153,14 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                             </div>
                         </div>
                         <div class="info-card">
-                            <img src="img/demo/avatars/avatar-admin.png" class="profile-image rounded-circle" alt="Dr. Codex Lantern">
+                            <img src="img/avatar/avatar.png" class="profile-image rounded-circle" alt="Smart Admin">
                             <div class="info-card-text">
                                 <a href="#" class="d-flex align-items-center text-white">
                                     <span class="text-truncate text-truncate-sm d-inline-block">
-                                        Dr. Codex Lantern
+                                        Smart Admin
                                     </span>
                                 </a>
-                                <span class="d-inline-block text-truncate text-truncate-sm">Toronto, Canada</span>
+                                <span class="d-inline-block text-truncate text-truncate-sm">New York, NY</span>
                             </div>
                             <img src="img/card-backgrounds/cover-2-lg.png" class="cover" alt="cover">
                             <a href="#" onclick="return false;" class="pull-trigger-btn" data-action="toggle" data-class="list-filter-active" data-target=".page-sidebar" data-focus="nav_filter_input">
@@ -170,65 +172,12 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 						-->
                         <ul id="js-nav-menu" class="nav-menu">
                             <li class="active">
-                                <a href="blank.html" title="Blank Project" data-filter-tags="blank page">
+                                <a href="index.html" title="Investing in Action" data-filter-tags="investing in action">
                                     <i class="fal fa-globe"></i>
-                                    <span class="nav-link-text" data-i18n="nav.blankpage">Blank Project</span>
+                                    <span class="nav-link-text" data-i18n="nav.blankpage">Investing in Action</span>
                                 </a>
-                            </li>
-                            <li class="nav-title">Navigation Title</li>
-                            <li>
-                                <a href="#" title="Category" data-filter-tags="category">
-                                    <i class="fal fa-file"></i>
-                                    <span class="nav-link-text" data-i18n="nav.category">Category</span>
-                                </a>
-                                <ul>
-                                    <li>
-                                        <a href="javascript:void(0);" title="Menu child" data-filter-tags="utilities menu child">
-                                            <span class="nav-link-text" data-i18n="nav.utilities_menu_child">Sub-category</span>
-                                        </a>
-                                        <ul>
-                                            <li>
-                                                <a href="javascript:void(0);" title="Sublevel Item" data-filter-tags="utilities menu child sublevel item">
-                                                    <span class="nav-link-text" data-i18n="nav.utilities_menu_child_sublevel_item">Sublevel Item</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" title="Another Item" data-filter-tags="utilities menu child another item">
-                                                    <span class="nav-link-text" data-i18n="nav.utilities_menu_child_another_item">Another Item</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="disabled">
-                                        <a href="javascript:void(0);" title="Disabled item" data-filter-tags="utilities disabled item">
-                                            <span class="nav-link-text" data-i18n="nav.utilities_disabled_item">Disabled item</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- Example of open and active states -->
-                            <li class="active open">
-                                <a href="#" title="Category" data-filter-tags="category">
-                                    <i class="fal fa-plus"></i>
-                                    <span class="nav-link-text" data-i18n="nav.category">Open Item</span>
-                                </a>
-                                <ul>
-                                    <li class="active open">
-                                        <a href="javascript:void(0);" title="Menu child" data-filter-tags="utilities menu child">
-                                            <span class="nav-link-text" data-i18n="nav.utilities_menu_child">Open Sub-category</span>
-                                        </a>
-                                        <ul>
-                                            <li class="active">
-                                                <a href="javascript:void(0);" title="Sublevel Item" data-filter-tags="utilities menu child sublevel item">
-                                                    <span class="nav-link-text" data-i18n="nav.utilities_menu_child_sublevel_item">Active Item</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
                             </li>
                         </ul>
-                        <div class="filter-message js-filter-message bg-success-600"></div>
                     </nav>
                     <!-- END PRIMARY NAVIGATION -->
                     <!-- NAV FOOTER -->
@@ -239,17 +188,17 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                         </a>
                         <ul class="list-table m-auto nav-footer-buttons">
                             <li>
-                                <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Chat logs">
+                                <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Chat">
                                     <i class="fal fa-comments"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Support Chat">
-                                    <i class="fal fa-life-ring"></i>
+                                <a href="mailto:lifelonginvestorllc@gmail.com" data-toggle="tooltip" data-placement="top" title="Email" itemprop="email" target="_blank">
+                                    <i class="fal fa-envelope"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Make a call">
+                                <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Call">
                                     <i class="fal fa-phone"></i>
                                 </a>
                             </li>
@@ -483,372 +432,10 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                     </div>
                                 </div>
                             </div>
-                            <!-- app message -->
-                            <a href="#" class="header-icon" data-toggle="modal" data-target=".js-modal-messenger">
-                                <i class="fal fa-globe"></i>
-                                <span class="badge badge-icon">!</span>
-                            </a>
-                            <!-- app notification -->
-                            <div>
-                                <a href="#" class="header-icon" data-toggle="dropdown" title="You got 11 notifications">
-                                    <i class="fal fa-bell"></i>
-                                    <span class="badge badge-icon">11</span>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-animated dropdown-xl">
-                                    <div class="dropdown-header bg-trans-gradient d-flex justify-content-center align-items-center rounded-top mb-2">
-                                        <h4 class="m-0 text-center color-white">
-                                            11 New
-                                            <small class="mb-0 opacity-80">User Notifications</small>
-                                        </h4>
-                                    </div>
-                                    <ul class="nav nav-tabs nav-tabs-clean" role="tablist">
-                                        <li class="nav-item">
-                                            <a class="nav-link px-4 fs-md js-waves-on fw-500" data-toggle="tab" href="#tab-messages" data-i18n="drpdwn.messages">Messages</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link px-4 fs-md js-waves-on fw-500" data-toggle="tab" href="#tab-feeds" data-i18n="drpdwn.feeds">Feeds</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link px-4 fs-md js-waves-on fw-500" data-toggle="tab" href="#tab-events" data-i18n="drpdwn.events">Events</a>
-                                        </li>
-                                    </ul>
-                                    <div class="tab-content tab-notification">
-                                        <div class="tab-pane active p-3 text-center">
-                                            <h5 class="mt-4 pt-4 fw-500">
-                                                <span class="d-block fa-3x pb-4 text-muted">
-                                                    <i class="ni ni-arrow-up text-gradient opacity-70"></i>
-                                                </span> Select a tab above to activate
-                                                <small class="mt-3 fs-b fw-400 text-muted">
-                                                    This blank page message helps protect your privacy, or you can show the first message here automatically through
-                                                    <a href="#">settings page</a>
-                                                </small>
-                                            </h5>
-                                        </div>
-                                        <div class="tab-pane" id="tab-messages" role="tabpanel">
-                                            <div class="custom-scroll h-100">
-                                                <ul class="notification">
-                                                    <li class="unread">
-                                                        <a href="#" class="d-flex align-items-center">
-                                                            <span class="status mr-2">
-                                                                <span class="profile-image rounded-circle d-inline-block" style="background-image:url('img/demo/avatars/avatar-c.png')"></span>
-                                                            </span>
-                                                            <span class="d-flex flex-column flex-1 ml-1">
-                                                                <span class="name">Melissa Ayre <span class="badge badge-primary fw-n position-absolute pos-top pos-right mt-1">INBOX</span></span>
-                                                                <span class="msg-a fs-sm">Re: New security codes</span>
-                                                                <span class="msg-b fs-xs">Hello again and thanks for being part...</span>
-                                                                <span class="fs-nano text-muted mt-1">56 seconds ago</span>
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="unread">
-                                                        <a href="#" class="d-flex align-items-center">
-                                                            <span class="status mr-2">
-                                                                <span class="profile-image rounded-circle d-inline-block" style="background-image:url('img/demo/avatars/avatar-a.png')"></span>
-                                                            </span>
-                                                            <span class="d-flex flex-column flex-1 ml-1">
-                                                                <span class="name">Adison Lee</span>
-                                                                <span class="msg-a fs-sm">Msed quia non numquam eius</span>
-                                                                <span class="fs-nano text-muted mt-1">2 minutes ago</span>
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="d-flex align-items-center">
-                                                            <span class="status status-success mr-2">
-                                                                <span class="profile-image rounded-circle d-inline-block" style="background-image:url('img/demo/avatars/avatar-b.png')"></span>
-                                                            </span>
-                                                            <span class="d-flex flex-column flex-1 ml-1">
-                                                                <span class="name">Oliver Kopyuv</span>
-                                                                <span class="msg-a fs-sm">Msed quia non numquam eius</span>
-                                                                <span class="fs-nano text-muted mt-1">3 days ago</span>
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="d-flex align-items-center">
-                                                            <span class="status status-warning mr-2">
-                                                                <span class="profile-image rounded-circle d-inline-block" style="background-image:url('img/demo/avatars/avatar-e.png')"></span>
-                                                            </span>
-                                                            <span class="d-flex flex-column flex-1 ml-1">
-                                                                <span class="name">Dr. John Cook PhD</span>
-                                                                <span class="msg-a fs-sm">Msed quia non numquam eius</span>
-                                                                <span class="fs-nano text-muted mt-1">2 weeks ago</span>
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="d-flex align-items-center">
-                                                            <span class="status status-success mr-2">
-                                                                <!-- <img src="img/demo/avatars/avatar-m.png" data-src="img/demo/avatars/avatar-h.png" class="profile-image rounded-circle" alt="Sarah McBrook" /> -->
-                                                                <span class="profile-image rounded-circle d-inline-block" style="background-image:url('img/demo/avatars/avatar-h.png')"></span>
-                                                            </span>
-                                                            <span class="d-flex flex-column flex-1 ml-1">
-                                                                <span class="name">Sarah McBrook</span>
-                                                                <span class="msg-a fs-sm">Msed quia non numquam eius</span>
-                                                                <span class="fs-nano text-muted mt-1">3 weeks ago</span>
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="d-flex align-items-center">
-                                                            <span class="status status-success mr-2">
-                                                                <span class="profile-image rounded-circle d-inline-block" style="background-image:url('img/demo/avatars/avatar-m.png')"></span>
-                                                            </span>
-                                                            <span class="d-flex flex-column flex-1 ml-1">
-                                                                <span class="name">Anothony Bezyeth</span>
-                                                                <span class="msg-a fs-sm">Msed quia non numquam eius</span>
-                                                                <span class="fs-nano text-muted mt-1">one month ago</span>
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="d-flex align-items-center">
-                                                            <span class="status status-danger mr-2">
-                                                                <span class="profile-image rounded-circle d-inline-block" style="background-image:url('img/demo/avatars/avatar-j.png')"></span>
-                                                            </span>
-                                                            <span class="d-flex flex-column flex-1 ml-1">
-                                                                <span class="name">Lisa Hatchensen</span>
-                                                                <span class="msg-a fs-sm">Msed quia non numquam eius</span>
-                                                                <span class="fs-nano text-muted mt-1">one year ago</span>
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane" id="tab-feeds" role="tabpanel">
-                                            <div class="custom-scroll h-100">
-                                                <ul class="notification">
-                                                    <li class="unread">
-                                                        <div class="d-flex align-items-center show-child-on-hover">
-                                                            <span class="d-flex flex-column flex-1">
-                                                                <span class="name d-flex align-items-center">Administrator <span class="badge badge-success fw-n ml-1">UPDATE</span></span>
-                                                                <span class="msg-a fs-sm">
-                                                                    System updated to version <strong>4.5.1</strong> <a href="docs_buildnotes.html">(patch notes)</a>
-                                                                </span>
-                                                                <span class="fs-nano text-muted mt-1">5 mins ago</span>
-                                                            </span>
-                                                            <div class="show-on-hover-parent position-absolute pos-right pos-bottom p-3">
-                                                                <a href="#" class="text-muted" title="delete"><i class="fal fa-trash-alt"></i></a>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="d-flex align-items-center show-child-on-hover">
-                                                            <div class="d-flex flex-column flex-1">
-                                                                <span class="name">
-                                                                    Adison Lee <span class="fw-300 d-inline">replied to your video <a href="#" class="fw-400"> Cancer Drug</a> </span>
-                                                                </span>
-                                                                <span class="msg-a fs-sm mt-2">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day...</span>
-                                                                <span class="fs-nano text-muted mt-1">10 minutes ago</span>
-                                                            </div>
-                                                            <div class="show-on-hover-parent position-absolute pos-right pos-bottom p-3">
-                                                                <a href="#" class="text-muted" title="delete"><i class="fal fa-trash-alt"></i></a>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="d-flex align-items-center show-child-on-hover">
-                                                            <!--<img src="img/demo/avatars/avatar-m.png" data-src="img/demo/avatars/avatar-k.png" class="profile-image rounded-circle" alt="k" />-->
-                                                            <div class="d-flex flex-column flex-1">
-                                                                <span class="name">
-                                                                    Troy Norman'<span class="fw-300">s new connections</span>
-                                                                </span>
-                                                                <div class="fs-sm d-flex align-items-center mt-2">
-                                                                    <span class="profile-image-md mr-1 rounded-circle d-inline-block" style="background-image:url('img/demo/avatars/avatar-a.png'); background-size: cover;"></span>
-                                                                    <span class="profile-image-md mr-1 rounded-circle d-inline-block" style="background-image:url('img/demo/avatars/avatar-b.png'); background-size: cover;"></span>
-                                                                    <span class="profile-image-md mr-1 rounded-circle d-inline-block" style="background-image:url('img/demo/avatars/avatar-c.png'); background-size: cover;"></span>
-                                                                    <span class="profile-image-md mr-1 rounded-circle d-inline-block" style="background-image:url('img/demo/avatars/avatar-e.png'); background-size: cover;"></span>
-                                                                    <div data-hasmore="+3" class="rounded-circle profile-image-md mr-1">
-                                                                        <span class="profile-image-md mr-1 rounded-circle d-inline-block" style="background-image:url('img/demo/avatars/avatar-h.png'); background-size: cover;"></span>
-                                                                    </div>
-                                                                </div>
-                                                                <span class="fs-nano text-muted mt-1">55 minutes ago</span>
-                                                            </div>
-                                                            <div class="show-on-hover-parent position-absolute pos-right pos-bottom p-3">
-                                                                <a href="#" class="text-muted" title="delete"><i class="fal fa-trash-alt"></i></a>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="d-flex align-items-center show-child-on-hover">
-                                                            <!--<img src="img/demo/avatars/avatar-m.png" data-src="img/demo/avatars/avatar-e.png" class="profile-image-sm rounded-circle align-self-start mt-1" alt="k" />-->
-                                                            <div class="d-flex flex-column flex-1">
-                                                                <span class="name">Dr John Cook <span class="fw-300">sent a <span class="text-danger">new signal</span></span></span>
-                                                                <span class="msg-a fs-sm mt-2">Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</span>
-                                                                <span class="fs-nano text-muted mt-1">10 minutes ago</span>
-                                                            </div>
-                                                            <div class="show-on-hover-parent position-absolute pos-right pos-bottom p-3">
-                                                                <a href="#" class="text-muted" title="delete"><i class="fal fa-trash-alt"></i></a>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="d-flex align-items-center show-child-on-hover">
-                                                            <div class="d-flex flex-column flex-1">
-                                                                <span class="name">Lab Images <span class="fw-300">were updated!</span></span>
-                                                                <div class="fs-sm d-flex align-items-center mt-1">
-                                                                    <a href="#" class="mr-1 mt-1" title="Cell A-0012">
-                                                                        <span class="d-block img-share" style="background-image:url('img/thumbs/pic-7.png'); background-size: cover;"></span>
-                                                                    </a>
-                                                                    <a href="#" class="mr-1 mt-1" title="Patient A-473 saliva">
-                                                                        <span class="d-block img-share" style="background-image:url('img/thumbs/pic-8.png'); background-size: cover;"></span>
-                                                                    </a>
-                                                                    <a href="#" class="mr-1 mt-1" title="Patient A-473 blood cells">
-                                                                        <span class="d-block img-share" style="background-image:url('img/thumbs/pic-11.png'); background-size: cover;"></span>
-                                                                    </a>
-                                                                    <a href="#" class="mr-1 mt-1" title="Patient A-473 Membrane O.C">
-                                                                        <span class="d-block img-share" style="background-image:url('img/thumbs/pic-12.png'); background-size: cover;"></span>
-                                                                    </a>
-                                                                </div>
-                                                                <span class="fs-nano text-muted mt-1">55 minutes ago</span>
-                                                            </div>
-                                                            <div class="show-on-hover-parent position-absolute pos-right pos-bottom p-3">
-                                                                <a href="#" class="text-muted" title="delete"><i class="fal fa-trash-alt"></i></a>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="d-flex align-items-center show-child-on-hover">
-                                                            <!--<img src="img/demo/avatars/avatar-m.png" data-src="img/demo/avatars/avatar-h.png" class="profile-image rounded-circle align-self-start mt-1" alt="k" />-->
-                                                            <div class="d-flex flex-column flex-1">
-                                                                <div class="name mb-2">
-                                                                    Lisa Lamar<span class="fw-300"> updated project</span>
-                                                                </div>
-                                                                <div class="row fs-b fw-300">
-                                                                    <div class="col text-left">
-                                                                        Progress
-                                                                    </div>
-                                                                    <div class="col text-right fw-500">
-                                                                        45%
-                                                                    </div>
-                                                                </div>
-                                                                <div class="progress progress-sm d-flex mt-1">
-                                                                    <span class="progress-bar bg-primary-500 progress-bar-striped" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></span>
-                                                                </div>
-                                                                <span class="fs-nano text-muted mt-1">2 hrs ago</span>
-                                                                <div class="show-on-hover-parent position-absolute pos-right pos-bottom p-3">
-                                                                    <a href="#" class="text-muted" title="delete"><i class="fal fa-trash-alt"></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane" id="tab-events" role="tabpanel">
-                                            <div class="d-flex flex-column h-100">
-                                                <div class="h-auto">
-                                                    <table class="table table-bordered table-calendar m-0 w-100 h-100 border-0">
-                                                        <tr>
-                                                            <th colspan="7" class="pt-3 pb-2 pl-3 pr-3 text-center">
-                                                                <div class="js-get-date h5 mb-2">[your date here]</div>
-                                                            </th>
-                                                        </tr>
-                                                        <tr class="text-center">
-                                                            <th>Sun</th>
-                                                            <th>Mon</th>
-                                                            <th>Tue</th>
-                                                            <th>Wed</th>
-                                                            <th>Thu</th>
-                                                            <th>Fri</th>
-                                                            <th>Sat</th>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="text-muted bg-faded">30</td>
-                                                            <td>1</td>
-                                                            <td>2</td>
-                                                            <td>3</td>
-                                                            <td>4</td>
-                                                            <td>5</td>
-                                                            <td><i class="fal fa-birthday-cake mt-1 ml-1 position-absolute pos-left pos-top text-primary"></i> 6</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>7</td>
-                                                            <td>8</td>
-                                                            <td>9</td>
-                                                            <td class="bg-primary-300 pattern-0">10</td>
-                                                            <td>11</td>
-                                                            <td>12</td>
-                                                            <td>13</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>14</td>
-                                                            <td>15</td>
-                                                            <td>16</td>
-                                                            <td>17</td>
-                                                            <td>18</td>
-                                                            <td>19</td>
-                                                            <td>20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>21</td>
-                                                            <td>22</td>
-                                                            <td>23</td>
-                                                            <td>24</td>
-                                                            <td>25</td>
-                                                            <td>26</td>
-                                                            <td>27</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>28</td>
-                                                            <td>29</td>
-                                                            <td>30</td>
-                                                            <td>31</td>
-                                                            <td class="text-muted bg-faded">1</td>
-                                                            <td class="text-muted bg-faded">2</td>
-                                                            <td class="text-muted bg-faded">3</td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-                                                <div class="flex-1 custom-scroll">
-                                                    <div class="p-2">
-                                                        <div class="d-flex align-items-center text-left mb-3">
-                                                            <div class="width-5 fw-300 text-primary l-h-n mr-1 align-self-start fs-xxl">
-                                                                15
-                                                            </div>
-                                                            <div class="flex-1">
-                                                                <div class="d-flex flex-column">
-                                                                    <span class="l-h-n fs-md fw-500 opacity-70">
-                                                                        October 2020
-                                                                    </span>
-                                                                    <span class="l-h-n fs-nano fw-400 text-secondary">
-                                                                        Friday
-                                                                    </span>
-                                                                </div>
-                                                                <div class="mt-3">
-                                                                    <p>
-                                                                        <strong>2:30PM</strong> - Doctor's appointment
-                                                                    </p>
-                                                                    <p>
-                                                                        <strong>3:30PM</strong> - Report overview
-                                                                    </p>
-                                                                    <p>
-                                                                        <strong>4:30PM</strong> - Meeting with Donnah V.
-                                                                    </p>
-                                                                    <p>
-                                                                        <strong>5:30PM</strong> - Late Lunch
-                                                                    </p>
-                                                                    <p>
-                                                                        <strong>6:30PM</strong> - Report Compression
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="py-2 px-3 bg-faded d-block rounded-bottom text-right border-faded border-bottom-0 border-right-0 border-left-0">
-                                        <a href="#" class="fs-xs fw-500 ml-auto">view all notifications</a>
-                                    </div>
-                                </div>
-                            </div>
                             <!-- app user menu -->
                             <div>
                                 <a href="#" data-toggle="dropdown" title="drlantern@gotbootstrap.com" class="header-icon d-flex align-items-center justify-content-center ml-2">
-                                    <img src="img/demo/avatars/avatar-admin.png" class="profile-image rounded-circle" alt="Dr. Codex Lantern">
+                                    <img src="img/avatar/avatar.png" class="profile-image rounded-circle" alt="Smart Admin">
                                     <!-- you can also add username next to the avatar with the codes below:
 									<span class="ml-1 mr-1 text-truncate text-truncate-header hidden-xs-down">Me</span>
 									<i class="ni ni-chevron-down hidden-xs-down"></i> -->
@@ -857,7 +444,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                     <div class="dropdown-header bg-trans-gradient d-flex flex-row py-4 rounded-top">
                                         <div class="d-flex flex-row align-items-center mt-1 mb-1 color-white">
                                             <span class="mr-2">
-                                                <img src="img/demo/avatars/avatar-admin.png" class="rounded-circle profile-image" alt="Dr. Codex Lantern">
+                                                <img src="img/avatar/avatar.png" class="rounded-circle profile-image" alt="Smart Admin">
                                             </span>
                                             <div class="info-card-text">
                                                 <div class="fs-lg text-truncate text-truncate-lg">Dr. Codex Lantern</div>
@@ -886,18 +473,14 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                             Language
                                         </div>
                                         <div class="dropdown-menu">
-                                            <a href="#?lang=fr" class="dropdown-item" data-action="lang" data-lang="fr">Français</a>
                                             <a href="#?lang=en" class="dropdown-item active" data-action="lang" data-lang="en">English (US)</a>
-                                            <a href="#?lang=es" class="dropdown-item" data-action="lang" data-lang="es">Español</a>
-                                            <a href="#?lang=ru" class="dropdown-item" data-action="lang" data-lang="ru">Русский язык</a>
-                                            <a href="#?lang=jp" class="dropdown-item" data-action="lang" data-lang="jp">日本語</a>
-                                            <a href="#?lang=ch" class="dropdown-item" data-action="lang" data-lang="ch">中文</a>
+                                            <a href="#?lang=ch" class="dropdown-item" data-action="lang" data-lang="ch">中文 (简体)</a>
                                         </div>
                                     </div>
                                     <div class="dropdown-divider m-0"></div>
                                     <a class="dropdown-item fw-500 pt-3 pb-3" href="page_login.html">
                                         <span data-i18n="drpdwn.page-logout">Logout</span>
-                                        <span class="float-right fw-n">&commat;codexlantern</span>
+                                        <span class="float-right fw-n">&commat;lifelonginvestorllc</span>
                                     </a>
                                 </div>
                             </div>
@@ -908,25 +491,25 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                     <!-- the #js-page-content id is needed for some plugins to initialize -->
                     <main id="js-page-content" role="main" class="page-content">
                         <ol class="breadcrumb page-breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0);">SmartAdmin</a></li>
-                            <li class="breadcrumb-item">Category</li>
-                            <li class="breadcrumb-item">Sub-category</li>
-                            <li class="breadcrumb-item active">Page Title</li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0);">Home</a></li>
+                            <li class="breadcrumb-item">Finance</li>
+                            <li class="breadcrumb-item">Investment</li>
+                            <li class="breadcrumb-item active">Action</li>
                             <li class="position-absolute pos-top pos-right d-none d-sm-block"><span class="js-get-date"></span></li>
                         </ol>
                         <div class="subheader">
                             <h1 class="subheader-title">
-                                <i class='subheader-icon fal fa-globe'></i> Blank Page <span class='fw-300'>SubTitle</span> <sup class='badge badge-primary fw-500'>STICKER</sup>
+                                <i class='subheader-icon fal fa-globe'></i> Investing in Action <span class='fw-300'>Performance</span> <sup class='badge badge-primary fw-500'>Trading</sup>
                                 <small>
-                                    Insert page description or punch line
+                                    A live trading account with a daily updated chart is worth a thousand words!
                                 </small>
                             </h1>
-                            <!-- 
-		Right content on content header
-		A nice area to add graphs or buttons -->
+                            <!-- Right content on content header. A nice area to add graphs or buttons -->
+                            <!--
                             <div class="subheader-block">
                                 Right Subheader Block
                             </div>
+                            -->
                         </div>
                         <div class="alert alert-primary">
                             <div class="d-flex flex-start w-100">
@@ -939,24 +522,22 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                 </div>
                                 <div class="d-flex flex-fill">
                                     <div class="flex-fill">
-                                        <span class="h5">Pro Tip!</span>
-                                        <p>
-                                            If you don't know where to start, this is a good page to start your application. It comes with the basics to get you started. Contains a good inline documentation and waypoints to guide you with your project. Use this area of the page as an attention grabber. Users are likely to respond or pay attention when you involve a color icon along with your information (as displayed here on the left).
-                                        </p>
-                                        <p class="m-0">
-                                            Follow a slogal with a useful link or call to action <a href="#" target="_blank">Call to action >></a>
-                                        </p>
+                                        <p class="h3">Introduce LIATS 介绍交易系统</p>
+
+                                        <p>LIATS (Lifelong Investor Algorithmic Trading System) is agile and transparent, applies the most suitable <strong>trading strategy</strong> to well-picked security target (Stock/ETF/Future/Forex/Option) to match its trending pattern. By connecting to your own <a href="https://www.interactivebrokers.com" target="_blank">IB (InteractiveBrokers)</a> account, our Algo Bot will conduct the trading session under your monitor and also notify you through SMS, Telegram or Email as per your preference.</p>
+
+                                        <p>LIATS（终身投资者算法交易系统）是敏捷灵活且透明可见的，将最合适的<strong>交易策略</strong>应用于精心挑选的证券目标（股票/ETF/期货/外汇/期权）以匹配其当前的趋势特征。通过连接到您自己的 <a href="https://www.interactivebrokers.com" target="_blank">IB (InteractiveBrokers)</a> 账户，我们的算法机器人将在您的监控下进行交易，并根据您的偏好以短信、电子电报或电子邮件的方式及时通知您。</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- Your main content goes below here: -->
                         <div class="row">
-                            <div class="col-xl-6">
+                            <div class="col-xl-12">
                                 <div id="panel-1" class="panel">
                                     <div class="panel-hdr">
                                         <h2>
-                                            Panel <span class="fw-300"><i>Title</i></span>
+                                            Live Trading Account 实时交易账户
                                         </h2>
                                         <div class="panel-toolbar">
                                             <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
@@ -966,41 +547,18 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                     </div>
                                     <div class="panel-container show">
                                         <div class="panel-content">
-                                            <div class="panel-tag">
-                                                It stash and was even had of collection the latest story still every or times derive come way. Travelling business ill. Helplessly starting didn't should he her bad will so through audiences to the supported congress, if card with was way allows century quarter the control village for of payload.
+                                            <div>
+                                                <canvas id="performanceChart"></canvas>
                                             </div>
-                                            <p>Offers it children. Been far good the or so eye. And first the her to white unionized that the absolutely supplies hall to named accuse times had or the to in the monitor a by carefully and than train excessive turned been a rationale to be the little. Agency still a the supported or people out doing place what does one studies of that value designer the you line their transformed extent, you to for not must reflection chequered with got rush than because he with thoughts until sisters term much and bed they of duty organization. And ago. As.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div id="panel-1" class="panel">
-                                    <div class="panel-hdr">
-                                        <h2>
-                                            Panel <span class="fw-300"><i>Title</i></span>
-                                        </h2>
-                                        <div class="panel-toolbar">
-                                            <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
-                                            <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
-                                            <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
-                                        </div>
-                                    </div>
-                                    <div class="panel-container show">
-                                        <div class="panel-content">
-                                            <div class="panel-tag">
-                                                It stash and was even had of collection the latest story still every or times derive come way. Travelling business ill. Helplessly starting didn't should he her bad will so through audiences to the supported congress, if card with was way allows century quarter the control village for of payload.
-                                            </div>
-                                            <p>Offers it children. Been far good the or so eye. And first the her to white unionized that the absolutely supplies hall to named accuse times had or the to in the monitor a by carefully and than train excessive turned been a rationale to be the little. Agency still a the supported or people out doing place what does one studies of that value designer the you line their transformed extent, you to for not must reflection chequered with got rush than because he with thoughts until sisters term much and bed they of duty organization. And ago. As.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-12">
-                                <div id="panel-1" class="panel">
+                                <div id="panel-2" class="panel">
                                     <div class="panel-hdr">
                                         <h2>
-                                            Panel <span class="fw-300"><i>Title</i></span>
+                                            Live Trading Journal 实时交易日志
                                         </h2>
                                         <div class="panel-toolbar">
                                             <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
@@ -1010,10 +568,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                     </div>
                                     <div class="panel-container show">
                                         <div class="panel-content">
-                                            <div class="panel-tag">
-                                                It stash and was even had of collection the latest story still every or times derive come way. Travelling business ill. Helplessly starting didn't should he her bad will so through audiences to the supported congress, if card with was way allows century quarter the control village for of payload.
-                                            </div>
-                                            <p>Offers it children. Been far good the or so eye. And first the her to white unionized that the absolutely supplies hall to named accuse times had or the to in the monitor a by carefully and than train excessive turned been a rationale to be the little. Agency still a the supported or people out doing place what does one studies of that value designer the you line their transformed extent, you to for not must reflection chequered with got rush than because he with thoughts until sisters term much and bed they of duty organization. And ago. As.</p>
+                                            <textarea id="dailyReportList" style="width: 100%; height:500px; border-radius: 5px; background: inherit; color:inherit;"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -1025,15 +580,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                     <!-- BEGIN Page Footer -->
                     <footer class="page-footer" role="contentinfo">
                         <div class="d-flex align-items-center flex-1 text-muted">
-                            <span class="hidden-md-down fw-700">2020 © SmartAdmin by&nbsp;<a href='https://www.gotbootstrap.com' class='text-primary fw-500' title='gotbootstrap.com' target='_blank'>gotbootstrap.com</a></span>
-                        </div>
-                        <div>
-                            <ul class="list-table m-0">
-                                <li><a href="intel_introduction.html" class="text-secondary fw-700">About</a></li>
-                                <li class="pl-3"><a href="info_app_licensing.html" class="text-secondary fw-700">License</a></li>
-                                <li class="pl-3"><a href="info_app_docs.html" class="text-secondary fw-700">Documentation</a></li>
-                                <li class="pl-3 fs-xl"><a href="https://wrapbootstrap.com/user/MyOrange" class="text-secondary" target="_blank"><i class="fal fa-question-circle" aria-hidden="true"></i></a></li>
-                            </ul>
+                            <span class="hidden-md-down fw-700">2023 © Lifelong Investor LLC</span>
                         </div>
                     </footer>
                     <!-- END Page Footer -->
@@ -1178,320 +725,6 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
             </a>
         </nav>
         <!-- END Quick Menu -->
-        <!-- BEGIN Messenger -->
-        <div class="modal fade js-modal-messenger modal-backdrop-transparent" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-right">
-                <div class="modal-content h-100">
-                    <div class="dropdown-header bg-trans-gradient d-flex align-items-center w-100">
-                        <div class="d-flex flex-row align-items-center mt-1 mb-1 color-white">
-                            <span class="mr-2">
-                                <span class="rounded-circle profile-image d-block" style="background-image:url('img/demo/avatars/avatar-d.png'); background-size: cover;"></span>
-                            </span>
-                            <div class="info-card-text">
-                                <a href="javascript:void(0);" class="fs-lg text-truncate text-truncate-lg text-white" data-toggle="dropdown" aria-expanded="false">
-                                    Tracey Chang
-                                    <i class="fal fa-angle-down d-inline-block ml-1 text-white fs-md"></i>
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Send Email</a>
-                                    <a class="dropdown-item" href="#">Create Appointment</a>
-                                    <a class="dropdown-item" href="#">Block User</a>
-                                </div>
-                                <span class="text-truncate text-truncate-md opacity-80">IT Director</span>
-                            </div>
-                        </div>
-                        <button type="button" class="close text-white position-absolute pos-top pos-right p-2 m-1 mr-2" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i class="fal fa-times"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body p-0 h-100 d-flex">
-                        <!-- BEGIN msgr-list -->
-                        <div class="msgr-list d-flex flex-column bg-faded border-faded border-top-0 border-right-0 border-bottom-0 position-absolute pos-top pos-bottom">
-                            <div>
-                                <div class="height-4 width-3 h3 m-0 d-flex justify-content-center flex-column color-primary-500 pl-3 mt-2">
-                                    <i class="fal fa-search"></i>
-                                </div>
-                                <input type="text" class="form-control bg-white" id="msgr_listfilter_input" placeholder="Filter contacts" aria-label="FriendSearch" data-listfilter="#js-msgr-listfilter">
-                            </div>
-                            <div class="flex-1 h-100 custom-scroll">
-                                <div class="w-100">
-                                    <ul id="js-msgr-listfilter" class="list-unstyled m-0">
-                                        <li>
-                                            <a href="#" class="d-table w-100 px-2 py-2 text-dark hover-white" data-filter-tags="tracey chang online">
-                                                <div class="d-table-cell align-middle status status-success status-sm ">
-                                                    <span class="profile-image-md rounded-circle d-block" style="background-image:url('img/demo/avatars/avatar-d.png'); background-size: cover;"></span>
-                                                </div>
-                                                <div class="d-table-cell w-100 align-middle pl-2 pr-2">
-                                                    <div class="text-truncate text-truncate-md">
-                                                        Tracey Chang
-                                                        <small class="d-block font-italic text-success fs-xs">
-                                                            Online
-                                                        </small>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="d-table w-100 px-2 py-2 text-dark hover-white" data-filter-tags="oliver kopyuv online">
-                                                <div class="d-table-cell align-middle status status-success status-sm ">
-                                                    <span class="profile-image-md rounded-circle d-block" style="background-image:url('img/demo/avatars/avatar-b.png'); background-size: cover;"></span>
-                                                </div>
-                                                <div class="d-table-cell w-100 align-middle pl-2 pr-2">
-                                                    <div class="text-truncate text-truncate-md">
-                                                        Oliver Kopyuv
-                                                        <small class="d-block font-italic text-success fs-xs">
-                                                            Online
-                                                        </small>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="d-table w-100 px-2 py-2 text-dark hover-white" data-filter-tags="dr john cook phd away">
-                                                <div class="d-table-cell align-middle status status-warning status-sm ">
-                                                    <span class="profile-image-md rounded-circle d-block" style="background-image:url('img/demo/avatars/avatar-e.png'); background-size: cover;"></span>
-                                                </div>
-                                                <div class="d-table-cell w-100 align-middle pl-2 pr-2">
-                                                    <div class="text-truncate text-truncate-md">
-                                                        Dr. John Cook PhD
-                                                        <small class="d-block font-italic fs-xs">
-                                                            Away
-                                                        </small>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="d-table w-100 px-2 py-2 text-dark hover-white" data-filter-tags="ali amdaney online">
-                                                <div class="d-table-cell align-middle status status-success status-sm ">
-                                                    <span class="profile-image-md rounded-circle d-block" style="background-image:url('img/demo/avatars/avatar-g.png'); background-size: cover;"></span>
-                                                </div>
-                                                <div class="d-table-cell w-100 align-middle pl-2 pr-2">
-                                                    <div class="text-truncate text-truncate-md">
-                                                        Ali Amdaney
-                                                        <small class="d-block font-italic fs-xs text-success">
-                                                            Online
-                                                        </small>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="d-table w-100 px-2 py-2 text-dark hover-white" data-filter-tags="sarah mcbrook online">
-                                                <div class="d-table-cell align-middle status status-success status-sm">
-                                                    <span class="profile-image-md rounded-circle d-block" style="background-image:url('img/demo/avatars/avatar-h.png'); background-size: cover;"></span>
-                                                </div>
-                                                <div class="d-table-cell w-100 align-middle pl-2 pr-2">
-                                                    <div class="text-truncate text-truncate-md">
-                                                        Sarah McBrook
-                                                        <small class="d-block font-italic fs-xs text-success">
-                                                            Online
-                                                        </small>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="d-table w-100 px-2 py-2 text-dark hover-white" data-filter-tags="ali amdaney offline">
-                                                <div class="d-table-cell align-middle status status-sm">
-                                                    <span class="profile-image-md rounded-circle d-block" style="background-image:url('img/demo/avatars/avatar-a.png'); background-size: cover;"></span>
-                                                </div>
-                                                <div class="d-table-cell w-100 align-middle pl-2 pr-2">
-                                                    <div class="text-truncate text-truncate-md">
-                                                        oliver.kopyuv@gotbootstrap.com
-                                                        <small class="d-block font-italic fs-xs">
-                                                            Offline
-                                                        </small>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="d-table w-100 px-2 py-2 text-dark hover-white" data-filter-tags="ali amdaney busy">
-                                                <div class="d-table-cell align-middle status status-danger status-sm">
-                                                    <span class="profile-image-md rounded-circle d-block" style="background-image:url('img/demo/avatars/avatar-j.png'); background-size: cover;"></span>
-                                                </div>
-                                                <div class="d-table-cell w-100 align-middle pl-2 pr-2">
-                                                    <div class="text-truncate text-truncate-md">
-                                                        oliver.kopyuv@gotbootstrap.com
-                                                        <small class="d-block font-italic fs-xs text-danger">
-                                                            Busy
-                                                        </small>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="d-table w-100 px-2 py-2 text-dark hover-white" data-filter-tags="ali amdaney offline">
-                                                <div class="d-table-cell align-middle status status-sm">
-                                                    <span class="profile-image-md rounded-circle d-block" style="background-image:url('img/demo/avatars/avatar-c.png'); background-size: cover;"></span>
-                                                </div>
-                                                <div class="d-table-cell w-100 align-middle pl-2 pr-2">
-                                                    <div class="text-truncate text-truncate-md">
-                                                        oliver.kopyuv@gotbootstrap.com
-                                                        <small class="d-block font-italic fs-xs">
-                                                            Offline
-                                                        </small>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="d-table w-100 px-2 py-2 text-dark hover-white" data-filter-tags="ali amdaney inactive">
-                                                <div class="d-table-cell align-middle">
-                                                    <span class="profile-image-md rounded-circle d-block" style="background-image:url('img/demo/avatars/avatar-m.png'); background-size: cover;"></span>
-                                                </div>
-                                                <div class="d-table-cell w-100 align-middle pl-2 pr-2">
-                                                    <div class="text-truncate text-truncate-md">
-                                                        +714651347790
-                                                        <small class="d-block font-italic fs-xs opacity-50">
-                                                            Missed Call
-                                                        </small>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <div class="filter-message js-filter-message"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <a class="fs-xl d-flex align-items-center p-3">
-                                    <i class="fal fa-cogs"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- END msgr-list -->
-                        <!-- BEGIN msgr -->
-                        <div class="msgr d-flex h-100 flex-column bg-white">
-                            <!-- BEGIN custom-scroll -->
-                            <div class="custom-scroll flex-1 h-100">
-                                <div id="chat_container" class="w-100 p-4">
-                                    <!-- start .chat-segment -->
-                                    <div class="chat-segment">
-                                        <div class="time-stamp text-center mb-2 fw-400">
-                                            Jun 19
-                                        </div>
-                                    </div>
-                                    <!--  end .chat-segment -->
-                                    <!-- start .chat-segment -->
-                                    <div class="chat-segment chat-segment-sent">
-                                        <div class="chat-message">
-                                            <p>
-                                                Hey Tracey, did you get my files?
-                                            </p>
-                                        </div>
-                                        <div class="text-right fw-300 text-muted mt-1 fs-xs">
-                                            3:00 pm
-                                        </div>
-                                    </div>
-                                    <!--  end .chat-segment -->
-                                    <!-- start .chat-segment -->
-                                    <div class="chat-segment chat-segment-get">
-                                        <div class="chat-message">
-                                            <p>
-                                                Hi
-                                            </p>
-                                            <p>
-                                                Sorry going through a busy time in office. Yes I analyzed the solution.
-                                            </p>
-                                            <p>
-                                                It will require some resource, which I could not manage.
-                                            </p>
-                                        </div>
-                                        <div class="fw-300 text-muted mt-1 fs-xs">
-                                            3:24 pm
-                                        </div>
-                                    </div>
-                                    <!--  end .chat-segment -->
-                                    <!-- start .chat-segment -->
-                                    <div class="chat-segment chat-segment-sent chat-start">
-                                        <div class="chat-message">
-                                            <p>
-                                                Okay
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!--  end .chat-segment -->
-                                    <!-- start .chat-segment -->
-                                    <div class="chat-segment chat-segment-sent chat-end">
-                                        <div class="chat-message">
-                                            <p>
-                                                Sending you some dough today, you can allocate the resources to this project.
-                                            </p>
-                                        </div>
-                                        <div class="text-right fw-300 text-muted mt-1 fs-xs">
-                                            3:26 pm
-                                        </div>
-                                    </div>
-                                    <!--  end .chat-segment -->
-                                    <!-- start .chat-segment -->
-                                    <div class="chat-segment chat-segment-get chat-start">
-                                        <div class="chat-message">
-                                            <p>
-                                                Perfect. Thanks a lot!
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!--  end .chat-segment -->
-                                    <!-- start .chat-segment -->
-                                    <div class="chat-segment chat-segment-get">
-                                        <div class="chat-message">
-                                            <p>
-                                                I will have them ready by tonight.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!--  end .chat-segment -->
-                                    <!-- start .chat-segment -->
-                                    <div class="chat-segment chat-segment-get chat-end">
-                                        <div class="chat-message">
-                                            <p>
-                                                Cheers
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!--  end .chat-segment -->
-                                    <!-- start .chat-segment for timestamp -->
-                                    <div class="chat-segment">
-                                        <div class="time-stamp text-center mb-2 fw-400">
-                                            Jun 20
-                                        </div>
-                                    </div>
-                                    <!--  end .chat-segment for timestamp -->
-                                </div>
-                            </div>
-                            <!-- END custom-scroll  -->
-                            <!-- BEGIN msgr__chatinput -->
-                            <div class="d-flex flex-column">
-                                <div class="border-faded border-right-0 border-bottom-0 border-left-0 flex-1 mr-3 ml-3 position-relative shadow-top">
-                                    <div class="pt-3 pb-1 pr-0 pl-0 rounded-0" tabindex="-1">
-                                        <div id="msgr_input" contenteditable="true" data-placeholder="Type your message here..." class="height-10 form-content-editable"></div>
-                                    </div>
-                                </div>
-                                <div class="height-8 px-3 d-flex flex-row align-items-center flex-wrap flex-shrink-0">
-                                    <a href="javascript:void(0);" class="btn btn-icon fs-xl width-1 mr-1" data-toggle="tooltip" data-original-title="More options" data-placement="top">
-                                        <i class="fal fa-ellipsis-v-alt color-fusion-300"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-icon fs-xl mr-1" data-toggle="tooltip" data-original-title="Attach files" data-placement="top">
-                                        <i class="fal fa-paperclip color-fusion-300"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-icon fs-xl mr-1" data-toggle="tooltip" data-original-title="Insert photo" data-placement="top">
-                                        <i class="fal fa-camera color-fusion-300"></i>
-                                    </a>
-                                    <div class="ml-auto">
-                                        <a href="javascript:void(0);" class="btn btn-info">Send</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- END msgr__chatinput -->
-                        </div>
-                        <!-- END msgr -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END Messenger -->
         <!-- BEGIN Page Settings -->
         <div class="modal fade js-modal-settings modal-backdrop-transparent" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-right modal-md">
@@ -1776,7 +1009,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                             <div class="d-flex flex-column flex-1">
                                                 <div class="bg-white border-bottom border-primary py-1"></div>
                                                 <div class="bg-faded flex-1 pt-3 pb-3 px-2">
-                                                    <div class="py-3" style="background:url('img/demo/s-1.png') top left no-repeat;background-size: 100%;"></div>
+                                                    <div class="py-3" style="background:url('img/theme.png') top left no-repeat;background-size: 100%;"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1788,7 +1021,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                             <div class="d-flex flex-column flex-1">
                                                 <div class="bg-white border-bottom border- py-1"></div>
                                                 <div class="bg-white flex-1 pt-3 pb-3 px-2">
-                                                    <div class="py-3" style="background:url('img/demo/s-1.png') top left no-repeat;background-size: 100%;"></div>
+                                                    <div class="py-3" style="background:url('img/theme.png') top left no-repeat;background-size: 100%;"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1800,7 +1033,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                             <div class="d-flex flex-column flex-1">
                                                 <div class="bg-fusion-600 border-bottom py-1"></div>
                                                 <div class="bg-fusion-300 flex-1 pt-3 pb-3 px-2">
-                                                    <div class="py-3 opacity-30" style="background:url('img/demo/s-1.png') top left no-repeat;background-size: 100%;"></div>
+                                                    <div class="py-3 opacity-30" style="background:url('img/theme.png') top left no-repeat;background-size: 100%;"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1840,7 +1073,94 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 						+ src/../jquery-snippets.js (core) -->
         <script src="js/vendors.bundle.js"></script>
         <script src="js/app.bundle.js"></script>
-        <!--This page contains the basic JS and CSS files to get started on your project. If you need aditional addon's or plugins please see scripts located at the bottom of each page in order to find out which JS/CSS files to add.-->
+        <!-- plugin Chart.js : MIT license -->
+        <script src="js/statistics/chartjs/chart.umd.min.js"></script>
+        <!-- dependency for c3 charts : this dependency is a BSD license with clause 3 -->
+        <script src="js/statistics/d3/d3.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                function drawPerformanceChart(data) {
+                    const canvas = document.getElementById('performanceChart');
+                    const labels = data.map(function(d) {return d.Date});
+                    const principal = data.map(function(d) {return d.Principal});
+                    const aum = data.map(function(d) {return d.AUM});
+                    const benchmark = data.map(function(d) {return d.Benchmark});
+                    const config = {
+                        type: 'line',
+                        data: {
+                            labels: labels,
+                            datasets: [{
+                                label: "Principal (本金)",
+                                lineTension: 0.2,
+                                borderColor: "green",
+                                borderWidth: 1.5,
+                                pointRadius: 1,
+                                data: principal
+                            }, {
+                                label: "Total Market Value (总市值)",
+                                lineTension: 0.2,
+                                borderColor: "gold",
+                                borderWidth: 2.25,
+                                pointRadius: 1.5,
+                                data: aum
+                            }, {
+                                label: "Benchmark S&P 500 (基准标普500)",
+                                lineTension: 0.2,
+                                borderColor: "orange",
+                                borderWidth: 1.75,
+                                pointRadius: 1,
+                                data: benchmark
+                            }]
+                        },
+                        options: {
+                            animation: true,
+                            responsive: true,
+                            aspectRatio: 2.0,
+                            devicePixelRatio: 2,
+                            plugins: {
+                                title: {
+                                    display: true,
+                                    color: "purple",
+                                    font: { size: 24 },
+                                    text: "Investment Performance (投资业绩表现)"
+                                },
+                                subtitle: {
+                                    display: true,
+                                    font: { size: 18 },
+                                    text: "1 unit = $10,000"
+                                },
+                                legend: {
+                                    display: true,
+                                    font: { size: 18 }
+                                },
+                                tooltip: {
+                                    enabled: true,
+                                    displayColors: false
+                                },
+                                layout: {
+                                    padding: 0
+                                }
+                            }
+                        }
+                    }
+                    new Chart(canvas, config);
+                }
+
+                function loadDailyReportList(data) {
+                    const list = $("#dailyReportList");
+                    list.text(data);
+                    list.scrollTop(list[0].scrollHeight);
+                }
+
+                $(function() {
+                    d3.csv("performance.csv").then(drawPerformanceChart);
+                    d3.text("dailyReport.txt").then(loadDailyReportList);
+                });
+
+            });
+
+        </script>
     </body>
     <!-- END Body -->
 </html>
