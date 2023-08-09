@@ -2,7 +2,7 @@ import os
 import datetime
 
 today = datetime.datetime.today()
-today = datetime.datetime(2023, 6, 19)
+today = datetime.datetime(2023, 8, 7)
 isExcel = True
 if today.weekday() < 5:
     if isExcel:
