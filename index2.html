@@ -569,6 +569,97 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                             <textarea id="dailyReportList" style="width: 100%; min-height: 500px; border-radius: 5px; background: inherit; color:inherit;"></textarea>
                                         </div>
                                     </div>
+
+                                    <!-- Oliver practice starts from here -->
+
+                                    <h3 id="calculate-target-prices-计算目标价">Calculate Target Prices 计算目标价</h3>
+
+                                    <p>Please type in the price and percent, enter to calculate the new target prices.</p>
+
+                                    <p>请输入价格和百分比，按回车计算新的目标价格。</p>
+
+                                    <div>
+                                        <p>
+                                            <i class="far fa-badge-dollar fa-fw"></i><label for="priceTag">Price: </label>
+                                            <input id="priceTag" size="15" value="$100" placeholder="$100" style="font-weight: bold" title="A base price">
+                                             
+                                            <i class="far fa-badge-percent fa-fw"></i><label for="percentTag">Percent: </label>
+                                            <input id="percentTag" size="10" value="2.5%" placeholder="2.5%" style="font-weight: bold" title="An interval percent">
+                                             
+                                            <i class="far fa-badge-check fa-fw"></i><label for="gridTag">Grid: </label>
+                                            <input id="gridTag" type="checkbox">
+                                        </p>
+                                    </div>
+
+                                    <div style="margin-top: 5px">
+                                        <table id="targetPrices" class="targetPrices">
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <h3 id="grid-trading-prices-网格交易价格">Grid Trading Prices 网格交易价格</h3>
+
+                                    <p>Please type in the price range, grids number and invest amount, enter to calculate grid trading prices.
+                                        <br>Note: The invest amount will be split evenly among grids.</p>
+
+                                    <p>请输入价格区间、网格数和投资金额，按回车计算网格交易价格。
+                                        <br>备注：投资金额将会被平均分配到每个网格中。</p>
+
+                                    <div>
+                                        <p>
+                                            <i class="far fa-arrow-to-left fa-fw"></i><label for="startPriceTag">Start Price: </label>
+                                            <input id="startPriceTag" size="10" value="$60" placeholder="$60" style="font-weight: bold">
+                                            <i class="far fa-arrow-to-right fa-fw"></i><label for="stopPriceTag">Stop Price: </label>
+                                            <input id="stopPriceTag" size="10" value="$100" placeholder="$100" style="font-weight: bold">
+                                             
+                                            <i class="far fa-table fa-fw"></i><label for="gridsNumberTag">Grids: </label>
+                                            <input id="gridsNumberTag" size="5" value="5" placeholder="5" style="font-weight: bold" title="Grids number">
+                                             
+                                            <i class="far fa-money-bill-wave fa-fw"></i><label for="investAmountTag">Amount: </label>
+                                            <input id="investAmountTag" size="15" value="$10,000" placeholder="$10,000" style="font-weight: bold" title="Buy/Sell amount">
+                                        </p>
+                                    </div>
+
+                                    <!-- https://www.binance.com/en/support/faq/d5f441e8ab544a5b98241e00efb3a4ab -->
+
+                                    <div class="grid">
+                                        <div class="cell cell--6">
+                                            <h4 style="margin-top: 3px;">Arithmetic Mode</h4>
+                                            <table id="arithmeticPrices" class="gridPrices">
+                                                <thead>
+                                                <tr>
+                                                    <th>Spread</th>
+                                                    <th>
+                                                        <i class="far fa-sort-up fa-fw"></i>Price</th>
+                                                    <th>Shares</th>
+                                                    <th>Amount</th>
+                                                    <th>Total</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody class="increase">
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="cell cell--6">
+                                            <h4 style="margin-top: 3px;">Geometric Mode</h4>
+                                            <table id="geometricPrices" class="gridPrices">
+                                                <thead>
+                                                <tr>
+                                                    <th>Ratio</th>
+                                                    <th>
+                                                        <i class="far fa-sort-up fa-fw"></i>Price</th>
+                                                    <th>Shares</th>
+                                                    <th>Amount</th>
+                                                    <th>Total</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!-- Oliver practice ends from here -->
                                 </div>
                             </div>
                         </div>
@@ -1051,93 +1142,6 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                 </div>
                             </div>
                         </div> <span id="saving"></span>
-                    </div>
-                </div>
-                <h3 id="calculate-target-prices-计算目标价">Calculate Target Prices 计算目标价</h3>
-
-                <p>Please type in the price and percent, enter to calculate the new target prices.</p>
-
-                <p>请输入价格和百分比，按回车计算新的目标价格。</p>
-
-                <div>
-                    <p>
-                        <i class="far fa-badge-dollar fa-fw"></i><label for="priceTag">Price: </label>
-                        <input id="priceTag" size="15" value="$100" placeholder="$100" style="font-weight: bold" title="A base price">
-                         
-                        <i class="far fa-badge-percent fa-fw"></i><label for="percentTag">Percent: </label>
-                        <input id="percentTag" size="10" value="2.5%" placeholder="2.5%" style="font-weight: bold" title="An interval percent">
-                         
-                        <i class="far fa-badge-check fa-fw"></i><label for="gridTag">Grid: </label>
-                        <input id="gridTag" type="checkbox">
-                    </p>
-                </div>
-
-                <div style="margin-top: 5px">
-                    <table id="targetPrices" class="targetPrices">
-                        <tbody>
-                        </tbody>
-                    </table>
-                </div>
-
-                <h3 id="grid-trading-prices-网格交易价格">Grid Trading Prices 网格交易价格</h3>
-
-                <p>Please type in the price range, grids number and invest amount, enter to calculate grid trading prices.
-                    <br>Note: The invest amount will be split evenly among grids.</p>
-
-                <p>请输入价格区间、网格数和投资金额，按回车计算网格交易价格。
-                    <br>备注：投资金额将会被平均分配到每个网格中。</p>
-
-                <div>
-                    <p>
-                        <i class="far fa-arrow-to-left fa-fw"></i><label for="startPriceTag">Start Price: </label>
-                        <input id="startPriceTag" size="10" value="$60" placeholder="$60" style="font-weight: bold">
-                        <i class="far fa-arrow-to-right fa-fw"></i><label for="stopPriceTag">Stop Price: </label>
-                        <input id="stopPriceTag" size="10" value="$100" placeholder="$100" style="font-weight: bold">
-                         
-                        <i class="far fa-table fa-fw"></i><label for="gridsNumberTag">Grids: </label>
-                        <input id="gridsNumberTag" size="5" value="5" placeholder="5" style="font-weight: bold" title="Grids number">
-                         
-                        <i class="far fa-money-bill-wave fa-fw"></i><label for="investAmountTag">Amount: </label>
-                        <input id="investAmountTag" size="15" value="$10,000" placeholder="$10,000" style="font-weight: bold" title="Buy/Sell amount">
-                    </p>
-                </div>
-
-                <!-- https://www.binance.com/en/support/faq/d5f441e8ab544a5b98241e00efb3a4ab -->
-
-                <div class="grid">
-                    <div class="cell cell--6">
-                        <h4 style="margin-top: 3px;">Arithmetic Mode</h4>
-                        <table id="arithmeticPrices" class="gridPrices">
-                            <thead>
-                            <tr>
-                                <th>Spread</th>
-                                <th>
-                                    <i class="far fa-sort-up fa-fw"></i>Price</th>
-                                <th>Shares</th>
-                                <th>Amount</th>
-                                <th>Total</th>
-                            </tr>
-                            </thead>
-                            <tbody class="increase">
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="cell cell--6">
-                        <h4 style="margin-top: 3px;">Geometric Mode</h4>
-                        <table id="geometricPrices" class="gridPrices">
-                            <thead>
-                            <tr>
-                                <th>Ratio</th>
-                                <th>
-                                    <i class="far fa-sort-up fa-fw"></i>Price</th>
-                                <th>Shares</th>
-                                <th>Amount</th>
-                                <th>Total</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            </tbody>
-                        </table>
                     </div>
                 </div>
             </div>
