@@ -7,6 +7,10 @@ import numpy as np
 import datetime as dt
 from pandas_datareader import data as pdr
 import config
+import openpyxl
+
+# Print the version of openpyxl
+print("openpyxl version:", openpyxl.__version__)
 
 
 # import yfinance as yf
@@ -66,16 +70,23 @@ class Performance:
         if len(self.mergedReportData) == 0:
             raise Exception("The merged report data is not ready yet.")
 
+        # Merge data and sort date
         df = self.mergedReportData.copy(deep=True).reset_index()
+        df['Date'] = pd.to_datetime(df['Date'], format='%m/%d/%y')
+        df = df.sort_values(by='Date').reset_index()
+
+        # Calculate benchmark
         df['Benchmark'] = df['Amount']
         for i in range(1, len(df)):
             df.loc[i, 'Benchmark'] = df.loc[i - 1, 'Benchmark'] * (df.loc[i - 1, 'BM1Return'] / 100 + 1) + df.loc[i, 'Amount']
+        df.to_csv("checkDF2.csv")
         df['Benchmark'] = (df['Benchmark'] / 10000).round(decimals=2)
         df['Principal'] = (df['Amount'].cumsum() / 10000).round(decimals=2)
         df['AUM'] = (df['NAV'] / 10000).round(decimals=2)
 
-        df = df[config.performanceColumns][df["Date"] >= startingDate]
-        df['Date'] = pd.to_datetime(df['Date'])
+
+        df = df[config.performanceColumns][df['Date'] >= pd.to_datetime("04/03/2023", format='%m/%d/%Y')]
+        # df['Date'] = pd.to_datetime(df['Date'])
         # df["Date"] = df['Date'].dt.month.astype(str) + '/' + df['Date'].dt.day.astype(str) + '/' + df['Date'].dt.strftime('%y')
         df["Date"] = df['Date'].dt.strftime('%#m/%#d/%y')
 
