@@ -79,7 +79,6 @@ class Performance:
         df['Benchmark'] = df['Amount']
         for i in range(1, len(df)):
             df.loc[i, 'Benchmark'] = df.loc[i - 1, 'Benchmark'] * (df.loc[i - 1, 'BM1Return'] / 100 + 1) + df.loc[i, 'Amount']
-        df.to_csv("checkDF2.csv")
         df['Benchmark'] = (df['Benchmark'] / 10000).round(decimals=2)
         df['Principal'] = (df['Amount'].cumsum() / 10000).round(decimals=2)
         df['AUM'] = (df['NAV'] / 10000).round(decimals=2)
