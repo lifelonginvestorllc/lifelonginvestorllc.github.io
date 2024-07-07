@@ -1,0 +1,3 @@
+
+wangcong26@ShawnDesktop:/mnt/c/Dev/LifelongInvestorWebsite/lifelonginvestorllc.github.io$
+rsync -P performance.csv dailyReport.txt webapp@lifelonginvestor.net:/home/webapp/lifelonginvestorllc.github.io
