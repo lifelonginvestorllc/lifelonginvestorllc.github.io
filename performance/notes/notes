@@ -1,3 +1,18 @@
 
 wangcong26@ShawnDesktop:/mnt/c/Dev/LifelongInvestorWebsite/lifelonginvestorllc.github.io$
 rsync -P performance.csv dailyReport.txt webapp@lifelonginvestor.net:/home/webapp/lifelonginvestorllc.github.io
+
+Steps to Get Your Telegram api_id and api_hash
+Go to: https://my.telegram.org
+
+1. Log in using your phone number (the same one you use with Telegram).
+2. You’ll get a login code via the Telegram app.
+3. Click “API Development Tools”.
+4. Fill in the form:
+    App title: Choose any name (e.g. MyParserApp)
+    Short name: Any short identifier (e.g. parser)
+    URL: You can leave this blank or put http://localhost
+    Platform: Choose something like "Desktop" or "Other"
+5. Once you submit the form, you'll get:
+api_id
+api_hash
